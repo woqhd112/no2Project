@@ -1,0 +1,297 @@
+/*			학생 성적조회			*/
+	#subup table{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#subup thead{
+		border-bottom: 2px solid #313436;
+	}
+	#subup thead th{
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 15px;
+	}
+	#subup thead th:FIRST-CHILD{
+		width: 25%;
+	}
+	#subup tbody{
+	}
+	#subup tbody td{
+		font-size: 12px;
+		border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+	}
+	#subup tbody td:FIRST-CHILD
+	, #subup tbody td:nth-child(3)
+	, #subup tbody td:nth-child(4){
+		text-align: center;
+	}
+	#subup tbody td:nth-child(1){
+		color: #044879;
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 15px;
+	}
+	#subup #page{
+		font-size: 13px;
+		text-align: center;
+		padding: 20px;
+	}
+	#subup #page .prnx{
+		font-size: 12px;
+	}
+	#subup #search{
+		text-align: center;
+		margin: 0px auto;
+		margin-bottom: 30px;
+	}
+	#subup #search .search{
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#subup #search .box{
+		width: 30%;
+		height: 27px;
+	}
+	#subup #search .searchbtn{
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#subup #search .resetbtn{
+		font-size: 13px;
+		background-color: #313436;
+		color: white;
+		border: 0px;
+		width: 50px;
+		height: 30px;
+	}
+	#gradebtns .btn1{
+		width: 100px;
+		height: 40px;
+	    background-color: #044879;
+	    color: white;
+	}
+	#gradebtns .btn2{
+		width: 100px;
+		height: 40px;
+	    background-color: #ffffff;
+	    color: black;
+	    border: 1px solid silver;
+	}
+
+/*			시험출제				*/
+	.addbtn{
+		border-radius: 3px 3px 3px 3px;
+		position: relative;
+		left: 37%;
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#exam{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#exam #examtitle{
+		margin-bottom: 15px;
+	}
+	#exam #examtitle:nth-child(2n-1){
+		border-radius: 5px 5px 5px 5px;
+		widht: 100%;
+		height: 60x;
+		background-color: #044879;
+    	background-image: url(../../imgs/submenu/regnot_title.jpg);                                                               
+		background-size: cover;
+	}
+	#exam #examtitle:nth-child(2n) { 
+		border-radius: 5px 5px 5px 5px;
+		widht: 100%;
+		height: 60px;
+		background-color: #044879;
+    	background-image: url(../../imgs/submenu/regnot_title2.jpg);                                                               
+		background-size: cover;
+	}
+	#exam #examtitle a{
+		display: block;
+		line-height: 60px;
+		font-size: 14px;
+		font-weidht: bold;
+		margin: 0px auto;
+		color: white;
+	}
+	#exam #examtitle a:hover{
+		text-decoration: underline;
+	 	transition: 0.5s;
+      	transition-timing-function: ease-in-out;
+		line-height: 60px;
+		font-size: 14px;
+		font-weidht: bold;
+		margin: 0px auto;
+		color: #a5fff7;
+	}
+
+/*		시험출제 상세페이지		*/
+	.examdetail{
+		width: 80%;
+		margin: 0px auto;
+	}
+	.examdetail table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	.examdetail thead{
+		border-bottom: 1px solid silver;
+	}
+	.examdetail thead tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	.examdetail thead th{
+		width: 100px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	.examdetail thead td{
+		height: 50px;
+		font-size: 11px;
+		width: 30%;
+		padding-left: 10px;
+	}
+	.examdetail thead .title{
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.examdetail tbody th{
+		height: 50px;
+		font-size: 12px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	.examdetail tbody tr:FIRST-CHILD{
+		font-size: 14px;
+		width: 100%;
+		height: 150px;
+	}
+	.examdetail tbody tr:nth-child(2){
+		border-top:0.5px solid #dfdfdf;
+		border-bottom:0.5px solid #dfdfdf;
+		font-size: 14px;
+		width: 100%;
+	}
+	.examdetail tbody tr:nth-child(2) th{
+		font-size: 14px;
+	}
+	.examdetail tbody tr:nth-child(2) td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	.examdetail .textarea{
+		font-family:Noto Sans KR;
+		width:98%;
+		height:150px;
+		border:0px;
+		padding-left: 10px;
+		padding-top: 13px;
+		resize: none;
+	}
+	#exambtns{
+		margin-top: 20px;
+		text-align: center;
+	}
+	#exambtns .btn1
+	, #exambtns .btn3{
+		width: 70px;
+		height: 35px;
+	    background-color: #ffffff;
+	    color: black;
+	    border: 1px solid silver;
+	}
+	#exambtns .btn2{
+		width: 70px;
+		height: 35px;
+	    background-color: #044879;
+	    color: white;
+	}
+	
+/*			시험 등록			*/
+	#exam_insert{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#exam_insert table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	#exam_insert thead{
+		border-bottom: 1px solid silver;
+	}
+	#exam_insert thead tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#exam_insert thead th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#exam_insert thead td{
+		width: 400px;
+		height: 50px;
+	}
+	#exam_insert thead .title{
+		text-align: left;
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#exam_insert thead td{
+		font-size: 13px;
+	}
+	#exam_insert tbody th{
+		width: 100px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#exam_insert tbody tr:FIRST-CHILD td{
+		font-size: 14px;
+		width: 100%;
+		height: 150px;
+	}
+	#exam_insert tbody tr:nth-child(2){
+		border-top:0.5px solid #dfdfdf;
+		border-bottom:0.5px solid #dfdfdf;
+		font-size: 14px;
+		width: 100%;
+	}
+	#exam_insert tbody tr:nth-child(2) td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	
+	#exam_insert tbody tr:nth-child(3){
+		margin: 0px auto;
+		text-align: center;
+		font-size: 14px;
+		width: 100%;
+		height:200px;
+		border-bottom: 1px solid silver;
+	}
+	#exam_insert .textarea{
+		font-family:Noto Sans KR;
+		height:150px;
+		border:0px;
+		padding-left: 10px;
+		padding-top: 13px;
+		resize: none;
+		margin: 0px auto;
+	}

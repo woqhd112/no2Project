@@ -1,0 +1,372 @@
+/*		전체공통			*/
+	.error::placeholder {
+		font-size:12px;
+		font-weight:bold;
+		color:red;
+	}
+	input[type='text'], input[type="password"], textarea, select, input[type="date"]{
+	    border-radius: 3px 3px 3px 3px;
+	    border: 1px solid silver;
+	}
+
+/*		테이블 앵커 공통		*/ 
+ 	table a{
+ 		color: #044879;
+ 	}
+ 	table a:hover{
+		text-decoration: underline;
+ 		color: #881e1e;
+	 	transition: 0.5s;
+      	transition-timing-function: ease-in-out;
+ 	}
+ 	
+ /*      버튼 규격화         */
+   .btnbox{
+	  border-radius: 5px 5px 5px 5px;
+      margin-top: 20px;
+      text-align: center;
+   }
+   .btnbox .btn1{
+	  border-radius: 5px 5px 5px 5px;
+      width: 100px;
+      height: 40px;
+      background-color: #044879;
+      color: white;
+      margin-right: 10px;
+   }
+   .btnbox .btn1_1{
+	  border-radius: 5px 5px 5px 5px;
+      width: 100px;
+      height: 40px;
+      background-color: #044879;
+      color: white;
+      margin-right: 10px;
+   }
+   .btnbox .btn2{
+	  border-radius: 5px 5px 5px 5px;
+      width: 100px;
+      height: 40px;
+      background-color: #ffffff;
+      color: black;
+      border: 1px solid silver;
+      margin-right: 10px;
+   }
+   .btnbox .btn3{
+	  border-radius: 5px 5px 5px 5px;
+      width: 100px;
+      height: 40px;
+      background-color: #ffffff;
+      color: black;
+      border: 1px solid silver;
+      margin-right: 10px;
+   }
+   .btnbox .btn4{
+	  border-radius: 5px 5px 5px 5px;
+      width: 100px;
+      height: 40px;
+      background-color: #ffffff;
+      color: black;
+      border: 1px solid silver;
+   }
+   
+ /* 	lms 메인			*/
+    .loginForm {
+	 	border-radius: 10px 10px 10px 10px;
+        margin: 0px auto;
+        margin-top: 130px;
+        width: 40%;
+        height: 60%;
+        text-align: center;
+        border: 1px solid silver;
+    }
+    .logoimg {
+    	margin: 0px auto;
+    	margin-top: 40px;
+    	margin-bottom: 40px;
+		position: relative;
+		width: 40%;
+		height: auto;
+    }
+    .loginForm #name, .loginForm #id {
+	 	border-radius: 10px 10px 10px 10px;
+	 	border: 0.5px solid silver;
+        width: 70%;
+        height: 60px;
+        margin: 0px auto;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    .loginForm #job{
+    	color: gray;
+	 	border-radius: 10px 10px 10px 10px;
+	 	border: 0.5px solid silver;
+        width: 74.5%;
+        height: 60px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+    .loginForm #password {
+	 	border-radius: 10px 10px 10px 10px;
+	 	border: 0.5px solid silver;
+        width: 70%;
+        height: 60px;
+        padding-left: 20px;
+    }
+    .loginForm #num {
+	 	border-radius: 10px 10px 10px 10px;
+	 	border: 0.5px solid silver;
+        width: 70%;
+        height: 60px;
+        padding-left: 20px;
+    }
+    .loginForm .btns {
+        margin: 10px auto;
+    }
+    .loginForm .btn {
+	 	border-radius: 10px 10px 10px 10px;
+        width: 75%;
+        height: 60px;
+        margin: 10px 10px;
+        margin-bottom: 50px;
+		background-color: #313436;
+        color: white;
+        display: inline-block;
+        cursor: pointer;  
+        border: 1px solid darkgray;
+    }
+    .loginForm .btns {
+        margin: 10px auto;
+    }
+	.loginForm .btn2 {
+		border-radius: 10px;
+        border: none;
+        width: 34%;
+        height: 60px;
+        margin: 0px 10px;
+        color: white;
+        background-color: #044879;
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 30px;
+	}
+    .loginForm .btn3{
+		border-radius: 10px;
+        border: 1px solid silver;
+     	width: 74%;
+      	height: 60px;
+        margin: 0px 10px;
+        background-color: #313436;
+        color: white;
+        display: inline-block;
+        cursor: pointer;  
+        border: 1px solid silver;
+    }
+	.loginForm .search{
+		position: relative;
+		top:-40px;
+	}
+	.loginForm .idsearch{
+		position: relative;
+		top:10px;
+	}
+	.loginForm .search a, .loginForm .search span{
+		font-size: 12px;
+	}
+	.loginForm .idsearch a, .loginForm .idsearch span{
+		font-size: 12px;
+	}
+    
+/*				교직원 공통레이아웃				*/
+	.lms{
+		width: 80%;
+		height: 550px;
+		margin: 0px auto;
+		margin-top: 50px;
+		margin-bottom: 110px;
+	}
+	.lms .conHeader {
+		border-radius: 10px 10px 0px 0px;
+		height: 30px;
+		padding: 15px 0px;
+		font-size: 14px;
+	    background-color: #044879;
+	}
+	.lms .welcome {
+		float: left;
+		color: white;
+		font-weight: bold;
+		line-height: 30px;
+		margin-left: 20px;
+	}
+	.lms #headerBtn {
+	    float: right;
+	    line-height: 30px;
+	    margin-right: 20px;
+	}
+	.lms #headerBtn>a {
+		padding-left: 10px;
+		color: white;
+	}
+	.lms .box{
+		overflow: hidden;
+		width: 100%;
+		height: 550px;
+		margin: 0px auto;
+	}
+	.lms .stuMenus {
+		border-radius: 0px 0px 0px 10px;
+		float: left;
+	    width: 20%;
+		height: 550px;
+	    background-color: gray;
+	}
+	.lms .stuMenus>li{
+		width: 100%;
+		font-size: 12px;
+	    text-align: center;
+	    color: gray;
+	    background-color: rgb(242,242,242);
+	    border-bottom: 1px solid gray;
+	    box-sizing: border-box;
+	    border-collapse: collapse;
+	    margin: 0px auto;
+	    padding: 20px;
+	}
+	.lms .box .mainbox {
+		float: left;
+		width: 80%;
+		height: 550px;
+		margin: 0px auto;
+	    text-align: center;
+	}
+	.lms .box .mainbox .title{
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	
+/*				교직원정보			*/
+	.mainbox #info table{
+		width: 80%;
+		margin: 0px auto;
+	}
+	.mainbox #info thead{
+		border-bottom: 2px solid #313436;
+	}
+	.mainbox #info thead th{
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 15px;
+	}
+	.mainbox #info tbody{
+	}
+	.mainbox #info tbody tr:nth-child(2n-1){
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	.mainbox #info tbody td{
+		font-size: 12px;
+		border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+	}
+	.mainbox #info tbody td:FIRST-CHILD
+	, .mainbox #info tbody td:nth-child(3)
+	, .mainbox #info tbody td:nth-child(4){
+		text-align: center;
+	}
+	.mainbox #info tbody td:nth-child(1){
+		color: #044879;
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 15px;
+	}
+	.mainbox #page{
+		font-size: 13px;
+		text-align: center;
+		padding: 20px;
+	}
+	.mainbox #page .prnx{
+		font-size: 12px;
+	}
+	.mainbox .addbtn{
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	.mainbox #search{
+		text-align: center;
+		margin: 0px auto;
+		margin-bottom: 30px;
+	}
+	.mainbox #search .search{
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	.mainbox #search .box{
+		border-radius: 3px 3px 3px 3px;
+		border: 1px solid silver;
+		position: relative;
+		top: -1px;
+		width: 30%;
+		height: 27px;
+	}
+	.mainbox #search .searchbtn{
+		border-radius: 3px 3px 3px 3px;
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	.mainbox #search .resetbtn{
+		border-radius: 3px 3px 3px 3px;
+		font-size: 13px;
+		background-color: #313436;
+		color: white;
+		border: 0px;
+		width: 50px;
+		height: 30px;
+	}
+	
+/*			정보수정			*/
+	.infor {
+ 		margin: 0px auto;
+		width: 80%;
+		border-bottom: 1px solid silver;
+		border-top: 1px solid silver;
+ 	}
+ 	.infor tr{
+		border-bottom:0.5px solid #dfdfdf;
+ 	}
+	.infor tr th{
+		width: 150px;
+		height: 55px;
+		line-height: 55px;
+	    margin: 0px auto;
+	    font-size: 14px;
+	    font-weight: bold;
+	    background-color: rgba(192, 192, 192, 0.1);
+	}
+	.infor tr td {
+		text-align: center;
+	    font-size: 14px;
+	}
+	.infor .editbox{
+		border-radius: 5px 5px 5px 5px;
+		border: 1px solid silver;
+		text-align: left;
+		width: 90%;
+		height: 30px;
+		padding-left: 15px;
+	}		
+	.edit .btn{
+		border-radius: 5px 5px 5px 5px;
+	    background-color: #313436;
+	    color: white;
+	    border: 1px solid silver;
+	    padding: 10px 30px; 
+	    margin-top: 30px;
+	}

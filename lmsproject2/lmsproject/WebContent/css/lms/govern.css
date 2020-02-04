@@ -1,0 +1,246 @@
+	.addbtn{
+		border-radius: 3px 3px 3px 3px;
+		position: relative;
+		left: 37%;
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	.btns{
+		margin-top: 20px;
+		text-align: center;
+	}
+	.btns .btn1{
+		width: 70px;
+		height: 35px;
+	    background-color: #ffffff;
+	    color: black;
+	    border: 1px solid silver;
+	}
+	.btns .btn2{
+		width: 70px;
+		height: 35px;
+	    background-color: #044879;
+	    color: white;
+	}
+	
+/*			직원 등록			*/
+	#staff_insert{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#staff_insert table{
+		border-top: 2px solid #313436;
+		border-bottom: 1px solid silver;
+		width:100%;
+	}
+	#staff_insert table tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#staff_insert table th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#staff_insert table td{
+		font-size: 13px;
+		width: 400px;
+		height: 50px;
+	}
+
+/*		강좌 리스트			*/
+	#regnot{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#regnot #regnottitle{
+		margin-bottom: 15px;
+	}
+	#regnot #regnottitle:nth-child(2n-1){ 
+	    border-radius: 5px 5px 5px 5px;
+		widht: 100%;
+		height: 60x;
+		background-color: #044879;
+    	background-image: url(../../imgs/submenu/regnot_title.jpg);                                                               
+		background-size: cover;
+	}
+	#regnot #regnottitle:nth-child(2n) { 
+	    border-radius: 5px 5px 5px 5px;
+		widht: 100%;
+		height: 60px;
+		background-color: #044879;
+    	background-image: url(../../imgs/submenu/regnot_title2.jpg);                                                               
+		background-size: cover;
+	}
+	#regnot #regnottitle a{
+		text-align: left;
+		padding-left: 20px;
+		display: block;
+		line-height: 60px;
+		font-size: 14px;
+		font-weidht: bold;
+		margin: 0px auto;
+		color: white;
+	}
+	#regnot #regnottitle a:hover{
+		text-decoration: underline;
+	 	transition: 0.5s;
+      	transition-timing-function: ease-in-out;
+		color: #a5fff7;
+	}
+	
+/*		강좌 상세페이지		*/
+	.sub_detail{
+		width: 80%;
+		margin: 0px auto;
+		border-top: 2px solid #313436;
+	}
+	.sub_detail tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	.sub_detail th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	.sub_detail td{
+		font-size: 13px;
+		height: 50px;
+	}
+	.sub_detail .title{
+		text-align: left;
+		padding-left: 10px;
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+/*		수강생관리 상세페이지 		*/
+	.examdetail{
+		width: 80%;
+		margin: 0px auto;
+		border-top: 2px solid #313436;
+		border-bottom: 1px solid silver;
+	}
+	.examdetail tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	.examdetail th{
+		width: 100px;
+		height: 40px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	.examdetail td{
+		height: 40px;
+		font-size: 11px;
+		width: 30%;
+		padding-left: 10px;
+	}
+	.examdetail .title{
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+/*		공지사항&FAQ 리스트			*/
+	#notice table{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#notice thead{
+		border-bottom: 2px solid #313436;
+	}
+	#notice thead th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 15px;
+	}
+	#notice tbody tr:nth-child(2n-1){
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#notice tbody td{
+		font-size: 12px;
+		border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+	}
+	#notice tbody td:FIRST-CHILD
+	, #notice tbody td:nth-child(3)
+	, #notice tbody td:nth-child(4)
+	, #notice tbody td:nth-child(5){
+		text-align: center;
+	}
+	#notice tbody td:nth-child(2){
+		text-align: left;
+		color: #044879;
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 15px;
+	}
+	#notice #page{
+		font-size: 13px;
+		text-align: center;
+		padding: 20px;
+	}
+	#notice #page .prnx{
+		font-size: 12px;
+	}
+
+/*		공지사항&FAQ 디테일, 등록			*/
+	#noticedetail{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#noticedetail table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	#noticedetail thead{
+		border-bottom: 1px solid silver;
+	}
+	#noticedetail thead tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#noticedetail thead th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#noticedetail thead .title{
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#noticedetail thead td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	#noticedetail .textarea{
+		font-family:Noto Sans KR;
+		width:100%;
+		height:200px;
+		border:0px;
+		border-bottom: 1px solid silver;
+		padding-left: 10px;
+		padding-top: 13px;
+		resize: none;
+	}
+	#noticedetail .textarea2{
+		font-family:Noto Sans KR;
+		width:98%;
+		height:200px;
+		border: 0.5px solid #dfdfdf;
+		border-top: 0px;
+		border-bottom: 0.5px solid silver;
+		padding-left: 10px;
+		padding-top: 13px;
+		resize: none;
+	}
+	
