@@ -223,18 +223,18 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">회계팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;회계팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
-				<a style="cursor: default;" href="${root }LMS/Employ/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
+				<a style="cursor: default; font-weight: bold;" href="${root }LMS/Employ/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
 			</div>
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Account/accountTeam.html">교직원 정보</a></li>
+				<li id="check"><a href="${root }LMS/Account/accountTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">정보 수정</li>
+				<li class="title" style="margin-top:50px;">[ 정보 수정 ]</li>
 				<li>
               		<table class="infor">
               		<%

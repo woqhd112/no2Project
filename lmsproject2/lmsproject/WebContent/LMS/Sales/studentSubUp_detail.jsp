@@ -16,7 +16,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(3){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(3) a{
 		color: white;
@@ -155,7 +155,7 @@ Home_Student_Dto bean=(Home_Student_Dto)request.getAttribute("bean");
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">영업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;영업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
 				<a href="${root }LMS/Sales/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
@@ -163,15 +163,14 @@ Home_Student_Dto bean=(Home_Student_Dto)request.getAttribute("bean");
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">교직원 정보</a></li>
-				<li id="check"><a href="${root }LMS/Sales/regnot.html">모집공고 등록</a></li>
-				<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/studentSubUp.html">학생 수강등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+				<li id="check"><a href="${root }LMS/Sales/regnot.html">◎&nbsp;&nbsp;모집공고 등록</a></li>
+				<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/studentSubUp.html">◎&nbsp;&nbsp;학생 수강등록</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">학생 수강등록</li>
-				<li>
+				<li class="title" style="margin-top:50px;">[ 학생 수강등록 ]</li>
+				<li style="margin-top: 80px;">
 					<table class="infor">
-					
               			<tr>
                    			<th>이름</th>
                    			<td colspan="3"><%=bean.getStuname() %></td>

@@ -295,3 +295,9 @@
 		resize: none;
 		margin: 0px auto;
 	}
+	
+	/*		시험출제		*/
+	.exammargin{
+		position: relative;
+		top: -25px;
+	}

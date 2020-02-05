@@ -41,7 +41,7 @@ public class ExamWriteController extends HttpServlet{
 		//테이블의 로우개수 구하는곳
 		int totalCount=0;	//로우갯수
 		
-		String tablename="notice";	//테이블이름
+		String tablename="exam";	//테이블이름
 		
 		try {
 			totalCount=com.tableRowReturn(tablename);

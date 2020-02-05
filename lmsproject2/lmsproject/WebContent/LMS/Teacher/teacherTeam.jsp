@@ -17,7 +17,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(1){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(1) a{
 		color: white;
@@ -50,6 +50,12 @@
 	.img .content h3{                                          
 		font-size: 10px;
 	}
+	#Progress_Loading{
+		 position: absolute;
+		 left: 50%;
+		 top: 50%;
+		 background: #ffffff;
+	}
 </style>
 <script type="text/javascript" src="../../js/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="../../js/jquery.bxslider.js"></script>
@@ -60,8 +66,9 @@
 LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 LMS_Class_Dto bean1=(LMS_Class_Dto)request.getAttribute("bean4");
 %>
+
 	$(document).ready(function(){
-	
+		
 		new WOW().init(); 
 		
 		eleSub=('#submenu');
@@ -117,7 +124,7 @@ LMS_Class_Dto bean1=(LMS_Class_Dto)request.getAttribute("bean4");
 		SimpleDateFormat date=new SimpleDateFormat("HHmmss");
 		int time=Integer.parseInt(date.format(today));
 		System.out.println(time);
-		if(time>0&&time<183000){
+		if(time>0&&time<1){
 		%>
 		$('#headerBtn a').eq(0).hide();
 		<%}%>
@@ -134,34 +141,52 @@ LMS_Class_Dto bean1=(LMS_Class_Dto)request.getAttribute("bean4");
 						alert('학생이 없습니다.');
 					}
 				});
+			
+				
 			}
 			return false;
 		});
 	});
-
+	
+	$(document).ready(function(){
+		   $('#Progress_Loading').hide(); 
+	})
+	.ajaxStart(function(){
+		$('#Progress_Loading').show(); 
+	})
+	.ajaxStop(function(){
+		$('#Progress_Loading').hide(); 
+	})
 
 </script>
 <title>강사팀 | 비트캠프</title>
 </head>
 <body>
+<div id = "Progress_Loading">
+<img src="${root }imgs/Progress_Loading.gif"/>
+</div>
 	<div class="wow fadeInUp">
 		<div class="lms">
 			<div class="conHeader">
-				<div class="welcome">강사팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+				<%if(bean1.getClassname()==null){ %>
+				<div class="welcome">※&nbsp;&nbsp;반을 배정받지 않았습니다.&nbsp;/&nbsp;강사팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
+				<%}else{ %>
+				<div class="welcome">※&nbsp;&nbsp;<%=bean1.getClassname() %>&nbsp;/&nbsp;강사팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
+				<%} %>
 				<div id="headerBtn">
-					<a style="font-weight: bold" href="${root }LMS/Teacher/checkEnd.html">출석마감</a>
+					<a style="font-weight: bold" href="${root }LMS/Teacher/checkEnd.html" onClick='return false'>출석마감</a>
 					<a href="${root }LMS/Teacher/inforup.html?empnum=<%=login.getEmpnum()%>&name=<%=login.getEmpname()%>">정보수정</a>
 					<a href="${root }LMS/logout.html">로그아웃</a>
 				</div>
 			</div>
 			<div class="box">
 				<ul class="stuMenus">
-					<li id="check"><a style="cursor: default;" href="${root }LMS/Teacher/teacherTeam.html">교직원 정보</a></li>
-					<li id="check"><a href="${root }LMS/Teacher/examWrite.html?name=<%=login.getEmpname()%>">시험 출제</a></li>
-					<li id="check"><a href="${root }LMS/Teacher/gradeAdmin.html">성적 관리</a></li>
+					<li id="check"><a style="cursor: default;" href="${root }LMS/Teacher/teacherTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+					<li id="check"><a href="${root }LMS/Teacher/examWrite.html?name=<%=login.getEmpname()%>">◎&nbsp;&nbsp;시험 출제</a></li>
+					<li id="check"><a href="${root }LMS/Teacher/gradeAdmin.html">◎&nbsp;&nbsp;성적 관리</a></li>
 				</ul>
 				<ul class="mainbox">
-					<li class="title" style="margin-top:50px; margin-bottom:50px">교직원 정보</li>
+					<li class="title" style="margin-top:50px;">[ 교직원 정보 ]</li>
 					<li>
 						<div id="info">
 							<table>
@@ -200,7 +225,7 @@ LMS_Class_Dto bean1=(LMS_Class_Dto)request.getAttribute("bean4");
 								System.out.println("첫페이지,마지막페이지 : "+begin+","+end);
 								if(prev==true){
 							%>
-								<a class="prnx" href="${root }LMS/Teacher/teacherTeam.html?page=<%=begin-10 %>&search=<%=search%>&keyword=<%=keyword%>">＜</a>
+								<a class="prnx" href="${root }LMS/Teacher/teacherTeam.html?page=<%=begin-5 %>&search=<%=search%>&keyword=<%=keyword%>">＜</a>
 							<%	}
 								for(int i=begin; i<=end; i++){
 									if(page1==i){
@@ -217,12 +242,12 @@ LMS_Class_Dto bean1=(LMS_Class_Dto)request.getAttribute("bean4");
 							</div>
 							<div id="search">
 								<form action="${root }LMS/Teacher/teacherTeam.html">
-									<select class="search" name="search">
+									<select style="height: 32px; font-size:12px;" class="search" name="search">
 										<option value="empname">이름</option>
 									</select>
-									<input class="box" type="text" name="keyword" value="<%=keyword%>">
-									<input class="searchbtn" type="submit" value="검색">
-			              			<input class="resetbtn" type="button" onclick="location.href='${root}LMS/Teacher/teacherTeam.html'" value="초기화">
+									<input style="position: relative; top:-1px;" class="box" type="text" name="keyword" value="<%=keyword%>">
+									<input style="border-radius: 3px; height: 32px; font-size:12px;" class="searchbtn" type="submit" value="검색">
+			              			<input style="border-radius: 3px; height: 32px; font-size:12px;" class="resetbtn" type="button" onclick="location.href='${root}LMS/Teacher/teacherTeam.html'" value="초기화">
 								</form>
 							</div>
 						</div>

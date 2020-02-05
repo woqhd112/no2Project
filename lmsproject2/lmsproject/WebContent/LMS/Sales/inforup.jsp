@@ -225,20 +225,20 @@ LMS_Emp_Dto bean=(LMS_Emp_Dto)request.getAttribute("bean");
 
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">영업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;영업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
-				<a style="cursor: default;" href="${root }LMS/Sales/inforup.html">정보수정</a>
+				<a style="cursor: default; font-weight: bold;" href="${root }LMS/Sales/inforup.html">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
 			</div>
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">교직원 정보</a></li>
-				<li id="check"><a href="${root }LMS/Sales/regnot.html">모집공고 등록</a></li>
-				<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">학생 수강등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+				<li id="check"><a href="${root }LMS/Sales/regnot.html">◎&nbsp;&nbsp;모집공고 등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">◎&nbsp;&nbsp;학생 수강등록</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">정보 수정</li>
+				<li class="title" style="margin-top:50px;">[ 정보 수정 ]</li>
 				<li>
               		<table class="infor">
               			<tr>

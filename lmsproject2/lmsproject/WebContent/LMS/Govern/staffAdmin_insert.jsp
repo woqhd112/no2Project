@@ -15,7 +15,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(1){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(1) a{
 		color: white;
@@ -256,7 +256,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 	<div class="wow fadeInUp">
 		<div class="lms">
 			<div class="conHeader">
-				<div class="welcome">행정팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+				<div class="welcome">&nbsp;※&nbsp;&nbsp;행정팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 				<div id="headerBtn">
 					<a href="${root }LMS/Govern/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 					<a href="${root }LMS/logout.html">로그아웃</a>
@@ -264,17 +264,17 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 			</div>
 			<div class="box">
 				<ul class="stuMenus">
-					<li id="check"><a style="cursor: default;" href="${root }LMS/Govern/staffAdmin.html">교직원 관리</a></li>
-					<li id="check"><a href="${root }LMS/Govern/subCreate.html">강좌 개설</a></li>
-					<li id="check"><a href="${root }LMS/Govern/studentAdmin.html">수강생 관리</a></li>
-					<li id="check"><a href="${root }LMS/Govern/notice.html">공지사항 관리</a></li>
-					<li id="check"><a href="${root }LMS/Govern/faq.html">FAQ 관리</a></li>
+					<li id="check"><a style="cursor: default;" href="${root }LMS/Govern/staffAdmin.html">◎&nbsp;&nbsp;교직원 관리</a></li>
+					<li id="check"><a href="${root }LMS/Govern/subCreate.html">◎&nbsp;&nbsp;강좌 개설</a></li>
+					<li id="check"><a href="${root }LMS/Govern/studentAdmin.html">◎&nbsp;&nbsp;수강생 관리</a></li>
+					<li id="check"><a href="${root }LMS/Govern/notice.html">◎&nbsp;&nbsp;공지사항 관리</a></li>
+					<li id="check"><a href="${root }LMS/Govern/faq.html">◎&nbsp;&nbsp;FAQ 관리</a></li>
 				</ul>
 				<ul class="mainbox">
-					<li class="title" style="margin-top:50px; margin-bottom:40px">교직원 등록</li>	
+					<li class="title" style="margin-top:50px;">[ 교직원 등록 ]</li>	
 					<li>
 						<form action="staffAdmin_insert.html" method="post">
-							<div id="staff_insert">
+							<div id="staff_insert" style="margin-top:50px;">
 								<table>
 									<tr>
 										<th style="width: 15%">아이디</th>

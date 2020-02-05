@@ -162,7 +162,7 @@
 					
 					if(prev==true){
 				%>
-					<a class="prnx" href="${root }Home/regnot.html?page=<%=begin-10 %>">＜</a>
+					<a class="prnx" href="${root }Home/regnot.html?page=<%=begin-5 %>">＜</a>
 				<%	}
 					for(int i=begin; i<=end; i++){
 						if(page1==i){
@@ -189,7 +189,7 @@
 				<div class="addr">
 					비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
 					Copyright © 비트캠프 All rights reserved.<br/>
-					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
 				</div>
 			</li>
 		</ul>

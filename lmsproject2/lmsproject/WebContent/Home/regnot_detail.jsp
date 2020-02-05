@@ -184,7 +184,7 @@
 						<%if(bean1.getRegfile()!=null){ %>
 						<td colspan="3"><a style="text-align: left;" href="${root }LMS/Sales/regnot_down.html?file=<%=bean1.getRegfile()%>&origin=<%=bean1.getOrigin()%>"><%=bean1.getOrigin() %></a></td>
 						<%}else{ %>
-						<td colspan="3" style="text-align:left">파일명</td>
+						<td colspan="3" style="text-align:left">선택 된 파일 없음</td>
 						<%} %>
 					</tr>
 				</tbody>
@@ -205,7 +205,7 @@
 				<div class="addr">
 					비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
 					Copyright © 비트캠프 All rights reserved.<br/>
-					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
 				</div>
 			</li>
 		</ul>

@@ -12,9 +12,13 @@
 <link rel="stylesheet" href="../../css/reset.css" />
 <link rel="stylesheet" href="../../css/index.css" />
 <style type="text/css">
+   .default .box .mainbox .title:FIRST-CHILD{
+      top: 0px;
+      margin-bottom: 30px;
+   }
 	.stuMenus>li:nth-child(5){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(5) a{
 		color: white;
@@ -160,7 +164,7 @@
 	<div class="wow fadeInUp">
 		<div class="default">
 			<div class="conHeader">
-				<div class="welcome"><%=login.getStuname() %>님이 로그인하였습니다.</div>
+				<div class="welcome">&nbsp;※&nbsp;&nbsp;<%=login.getStuname() %>&nbsp;님이 로그인하였습니다.</div>
 				<div id="headerBtn">
 					<a href="${root }Home/MyPage/inforup.html">정보수정</a>
 					<a href="${root }Home/logout.html">로그아웃</a>
@@ -168,14 +172,14 @@
 			</div>
 			<div class="box">
 				<ul class="stuMenus">
-					<li id="check"><a href="${root }Home/MyPage/check.html">출석체크</a></li>
-					<li id="subinfor"><a href="${root }Home/MyPage/subInfor.html">수강정보</a></li>
-					<li id="examview"><a href="${root }Home/MyPage/examView.html">시험조회</a></li>
-					<li id="gradeoepn"><a href="${root }Home/MyPage/gradeOpen.html">성적열람</a></li>
-					<li id="employ"><a style="cursor: default;" href="${root }Home/MyPage/employ.html">채용정보</a></li>
+					<li id="check"><a href="${root }Home/MyPage/check.html">◎&nbsp;&nbsp;출석체크</a></li>
+					<li id="subinfor"><a href="${root }Home/MyPage/subInfor.html">◎&nbsp;&nbsp;수강정보</a></li>
+					<li id="examview"><a href="${root }Home/MyPage/examView.html">◎&nbsp;&nbsp;시험조회</a></li>
+					<li id="gradeoepn"><a href="${root }Home/MyPage/gradeOpen.html">◎&nbsp;&nbsp;성적열람</a></li>
+					<li id="employ"><a style="cursor: default;" href="${root }Home/MyPage/employ.html">◎&nbsp;&nbsp;채용정보</a></li>
 				</ul>
 				<ul class="mainbox">
-					<li class="title" style="margin-top:50px; margin-bottom:50px">채용 정보</li>
+					<li class="title">[ 채용 정보 ]</li>
 					<li>
 						<div id="employ">
 							<table>
@@ -225,6 +229,7 @@
 								<a class="prnx" href="${root }Home/MyPage/employ.html?page=<%=end+1 %>">＞</a>
 							<%} 
 							%>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -242,7 +247,7 @@
 				<div class="addr">
 					비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
 					Copyright © 비트캠프 All rights reserved.<br/>
-					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
 				</div>
 			</li>
 		</ul>

@@ -14,7 +14,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(1){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(1) a{
 		color: white;
@@ -115,7 +115,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 	<div class="wow fadeInUp">
 		<div class="lms">
 			<div class="conHeader">
-				<div class="welcome">영업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+				<div class="welcome">&nbsp;※&nbsp;&nbsp;영업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 				<div id="headerBtn">
 					<a href="${root }LMS/Sales/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 					<a href="${root }LMS/logout.html">로그아웃</a>
@@ -123,12 +123,12 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 			</div>
 			<div class="box">
 				<ul class="stuMenus">
-					<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/salesTeam.html">교직원 정보</a></li>
-					<li id="check"><a href="${root }LMS/Sales/regnot.html">모집공고 등록</a></li>
-					<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">학생 수강등록</a></li>
+					<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/salesTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+					<li id="check"><a href="${root }LMS/Sales/regnot.html">◎&nbsp;&nbsp;모집공고 등록</a></li>
+					<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">◎&nbsp;&nbsp;학생 수강등록</a></li>
 				</ul>
 				<ul class="mainbox">
-					<li class="title" style="margin-top:50px; margin-bottom:50px">교직원 정보</li>
+					<li class="title" style="margin-top:50px;">[ 교직원 정보 ]</li>
 					<li>
 						<div id="info">
 							<table>
@@ -167,7 +167,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 								System.out.println("첫페이지,마지막페이지 : "+begin+","+end);
 								if(prev==true){
 							%>
-								<a class="prnx" href="${root }LMS/Sales/salesTeam.html?page=<%=begin-10 %>&search=<%=search%>&keyword=<%=keyword%>">＜</a>
+								<a class="prnx" href="${root }LMS/Sales/salesTeam.html?page=<%=begin-5 %>&search=<%=search%>&keyword=<%=keyword%>">＜</a>
 							<%	}
 								for(int i=begin; i<=end; i++){
 									if(page1==i){
@@ -184,12 +184,12 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 							</div>
 							<div id="search">
 								<form action="${root }LMS/Sales/salesTeam.html">
-									<select class="search" name="search">
+									<select style="height: 32px; font-size:12px;" class="search" name="search">
 										<option value="empname">이름</option>
 									</select>
-									<input class="box" type="text" name="keyword" value="<%=keyword%>">
-									<input class="searchbtn" type="submit" value="검색">
-			              			<input class="resetbtn" type="button" onclick="location.href='./salesTeam.html'" value="초기화">
+									<input style="position: relative; top:-1px;"class="box" type="text" name="keyword" value="<%=keyword%>">
+									<input style="border-radius: 3px; height: 32px; font-size:12px;" class="searchbtn" type="submit" value="검색">
+			              			<input style="border-radius: 3px; height: 32px; font-size:12px;" class="resetbtn" type="button" onclick="location.href='./salesTeam.html'" value="초기화">
 								</form>
 							</div>
 							<br/>

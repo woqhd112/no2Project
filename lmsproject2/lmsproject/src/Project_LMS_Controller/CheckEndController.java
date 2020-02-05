@@ -27,7 +27,6 @@ public class CheckEndController extends HttpServlet{
 		Common_dao dao=new Common_dao();
 		TimeCheck check=new TimeCheck();
 		ArrayList<Object[]> list=new ArrayList<Object[]>();
-		Object[] obj=null;
 		int diffDays=0;
 		System.out.println("객체생성 성공");
 		
@@ -72,7 +71,7 @@ public class CheckEndController extends HttpServlet{
 		PrintWriter out=resp.getWriter();
 		try{
 			for(int i=0;i<tableRow;i++){
-				obj=list.get(i);
+				Object[] obj=list.get(i);
 				System.out.println("반복문 접근 성공");
 				
 				//인트배열[attendinfo의 정보를 attendtime에있는 attendstat기준으로 계산]

@@ -1,4 +1,4 @@
-ㅁ<%@ page import="Project_LMS_Model.LMS_Emp_Dto"%>
+<%@ page import="Project_LMS_Model.LMS_Emp_Dto"%>
 <%@ page import="Project_Home_Model.Home_Student_Dto"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -224,20 +224,20 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">취업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;취업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
-				<a style="cursor: default;" href="${root }LMS/Employ/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
+				<a style="cursor: default; font-weight: bold;" href="${root }LMS/Employ/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
 			</div>
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-					<li id="check"><a href="${root }LMS/Employ/employTeam.html">교직원 정보</a></li>
-					<li id="check"><a href="${root }LMS/Employ/employ.html">채용정보 등록</a></li>
-					<li id="check"><a href="${root }LMS/Employ/gradeOpen.html">학생 성적조회</a></li>
+					<li id="check"><a href="${root }LMS/Employ/employTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+					<li id="check"><a href="${root }LMS/Employ/employ.html">◎&nbsp;&nbsp;채용정보 등록</a></li>
+					<li id="check"><a href="${root }LMS/Employ/gradeOpen.html">◎&nbsp;&nbsp;학생 성적조회</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">정보 수정</li>
+				<li class="title" style="margin-top:50px">[ 정보 수정 ]</li>
 				<li>
               		<table class="infor">
               		<%LMS_Emp_Dto bean=(LMS_Emp_Dto)request.getAttribute("bean"); %>

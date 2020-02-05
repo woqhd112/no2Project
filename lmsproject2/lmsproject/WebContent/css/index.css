@@ -456,7 +456,7 @@
 
 /*             FAQ               */
    #main #faq{
-      width: 70%;
+      width: 60%;
       height: 100%;
       margin: 0px auto;
    }
@@ -532,7 +532,7 @@
         text-align: center;
 	}
 	.login .loginForm {
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
 		height: 400px;
 	}
@@ -544,7 +544,7 @@
        font-weight: bold;
     }
     .login #id {
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
         width: 70%;
         height: 60px;
@@ -553,7 +553,7 @@
         padding-left: 15px;
     } 
     .login #password {
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
         width: 70%;
         height: 60px;
@@ -562,7 +562,7 @@
         padding-left: 15px;
     }
     .login #name {
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
         width: 70%;
         height: 60px;
@@ -571,7 +571,7 @@
         padding-left: 15px;
     } 
     .login #num {
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
         width: 70%;
         height: 60px;
@@ -583,7 +583,7 @@
         margin: 10px auto;
     }
     .login .btn {
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
      	width: 34%;
       	height: 60px;
@@ -595,19 +595,19 @@
         border: 1px solid silver;
     }
 	.login .btn2 {
-		border-radius: 10px;
+		border-radius: 5px;
         border: none;
         width: 34%;
         height: 60px;
         margin: 0px 10px;
         color: white;
-        background-color: #044879;
+        background-color: #313436;
         display: inline-block;
         cursor: pointer;
         margin-bottom: 30px;
 	}
     .login .btn3{
-		border-radius: 10px;
+		border-radius: 5px;
         border: 1px solid silver;
      	width: 74%;
       	height: 60px;
@@ -618,6 +618,10 @@
         cursor: pointer;  
         border: 1px solid silver;
     }
+    .login .btn2:hover, .login .btn3:hover{
+   	    background-color: #044879;
+		transition:3s all ease;
+	}
 	.login .search{
 		position: relative;
 		top:-20px;
@@ -646,7 +650,7 @@
        margin: 0px auto;
    }
    .join .agree {
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
       text-align: center;
       border: 1px solid darkgray;  
       background-color: #044879;
@@ -656,7 +660,7 @@
       line-height: 20px;
    }
    .join .writeInfo {
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
       border: 1px solid silver;   
       background-color: white;
       color: gray;
@@ -678,7 +682,7 @@
       text-align: center;
    }
    .join .textarea{
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
       overflow-x: hidden;
       width: 75%;
       padding: 10px;
@@ -691,7 +695,7 @@
       text-align: center; 
    }
    .join .btns .btn1 {
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
       background-color: #313436;
       color: white;
       width: 20%;
@@ -699,7 +703,7 @@
       margin-top: 10px;
    }
    .join .btns .btn2 {
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
       background-color: #ffffff;
       color: gray; 
       width: 20%;
@@ -708,7 +712,7 @@
       margin-right: 10px;
    }
    .join .btns .btn3 {
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
       background-color: #313436;
       color: white;
       width: 20%;
@@ -755,7 +759,7 @@
        font-weight: bold;
    }
    .join table input{
-	  border-radius: 5px 5px 5px 5px;
+	  border-radius: 5px;
 	  border: 1px solid silver;
       background-color: white;
       width: 90%;
@@ -797,15 +801,17 @@
       margin-bottom: 110px;
    }
    .default .conHeader {
-	  border-radius: 10px 10px 0px 0px;
+	  border-radius: 5px 5px 0px 0px;
+	  border-top: 0.5px solid silver;
+	  border-left: 0.5px solid silver;
+	  border-right: 0.5px solid silver;
       height: 30px;
       padding: 15px 0px;
       font-size: 14px;
-      background-color: #044879;
    }
    .default .welcome {
       float: left;
-      color: white;
+      color: #232323;
       font-weight: bold;
       line-height: 30px;
       margin-left: 20px;
@@ -816,59 +822,77 @@
        margin-right: 20px;
    }
    .default #headerBtn>a {
+   	  font-size: 12px;
       padding-left: 10px;
-      color: white;
+      color: #232323;
    }
    .default .box{
+   	  border-radius: 0px 0px 5px 0px;
+   	  border-right: 0.5px solid silver;
+   	  border-bottom: 0.5px solid silver;
+   	  box-sizing: border-box;
       overflow: hidden;
       width: 100%;
       height:600px;
       margin: 0px auto;
    }
    .default .stuMenus {
-   	  border-radius: 0px 0px 0px 10px;
+   	  border-radius: 0px 0px 0px 5px;
       float: left;
       width: 20%;
       height: 600px;
-      background-color: gray;
+      background-color: #263238;
+   }
+   .default .stuMenus>li a:hover{
+	  background-color: #304047;
+      transition:1s all ease;
    }
    .default .stuMenus>li{
       width: 100%;
+      height: 60px;
+      list-style-type: circle;
+      box-sizing: border-box;
+      border-collapse: collapse;
+      margin: 0px auto;
+   }
+   .default .stuMenus>li a{
+   	  padding-left: 25px;
+      text-align: left;
+   	  display: block;
+   	  line-height: 60px;
+   	  height: 60px;
       font-size: 12px;
-       text-align: center;
-       color: gray;
-       background-color: rgb(242,242,242);
-       border-bottom: 1px solid gray;
-       box-sizing: border-box;
-       border-collapse: collapse;
-       margin: 0px auto;
-       padding: 20px;
+      color: white;
    }
    .default .box .mainbox {
       float: left;
       width: 80%;
       height: 600px;
       margin: 0px auto;
-       text-align: center;
-   }
-   .default .box .mainbox .title{
       text-align: center;
-      font-size: 20px;
+   }
+   .default .box .mainbox .title:FIRST-CHILD{
+      position: relative;
+      top: -50px;
+      padding: 10px;
+      padding-left: 20px;
+      background-color: #f9f9f9;
+      text-align: left;
+      font-size: 14px;
       font-weight: bold;
       margin-bottom: 15px;
    }
 
 /*            학생대시보드(출석체크)            */
    .mainbox .checkimg {
-      margin-top: 80px;
-      margin-bottom: 30px;
+      margin-top: 110px;
    }
    .mainbox .notice{
       font-size: 12px;
       margin-bottom: 10px;
    }
    .mainbox .margin{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
    }
    .mainbox .btn2 {
       border-radius: 5px 5px 5px 5px;
@@ -961,13 +985,13 @@
    }
    .examdetail thead th{
       width: 100px;
-      height: 40px;
+      height: 50px;
       font-size: 14px;
       font-weight: bold;
       background-color: rgba(192, 192, 192, 0.1);
    }
    .examdetail thead td{
-      height: 40px;
+      height: 50px;
       font-size: 11px;
       width: 30%;
       padding-left: 10px;
@@ -978,7 +1002,7 @@
       font-weight: bold;
    }
    .examdetail tbody th{
-      height: 40px;
+      height: 50px;
       font-size: 12px;
       font-weight: bold;
       background-color: rgba(192, 192, 192, 0.1);
@@ -1021,8 +1045,7 @@
       border-bottom: 2px solid #313436;
    }
    .mainbox #employ thead th{
-      font-size: 14px;
-      font-weight: bold;
+      font-size: 12px;
       padding-bottom: 15px;
    }
    .mainbox #employ thead th:nth-child(2){
@@ -1050,8 +1073,8 @@
       font-size: 13px;
       font-weight: bold;
       transition: width 1s;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
    }
    .mainbox #employ tbody td:nth-child(2)>a:hover{
       text-decoration: underline;

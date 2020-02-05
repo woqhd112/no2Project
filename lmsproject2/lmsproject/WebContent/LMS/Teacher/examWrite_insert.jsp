@@ -18,7 +18,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(2){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(2) a{
 		color: white;
@@ -240,7 +240,11 @@ LMS_Class_Dto bean=(LMS_Class_Dto)request.getAttribute("bean4");
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">강사팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+				<%if(bean.getClassname()==null){ %>
+				<div class="welcome">※&nbsp;&nbsp;반을 배정받지 않았습니다.&nbsp;/&nbsp;강사팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
+				<%}else{ %>
+				<div class="welcome">※&nbsp;&nbsp;<%=bean.getClassname() %>&nbsp;/&nbsp;강사팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
+				<%} %>
 			<div id="headerBtn">
 				<a style="font-weight: bold" href="${root }LMS/Teacher/checkEnd.html">출석마감</a>
 				<a href="${root }LMS/Teacher/inforup.html?empnum=<%=login.getEmpnum()%>&name=<%=login.getEmpname()%>">정보수정</a>
@@ -249,12 +253,12 @@ LMS_Class_Dto bean=(LMS_Class_Dto)request.getAttribute("bean4");
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Teacher/teacherTeam.html">교직원 정보</a></li>
-				<li id="check"><a style="cursor: default;" href="${root }LMS/Teacher/examWrite.html?name=<%=login.getEmpname()%>">시험 출제</a></li>
-				<li id="check"><a href="${root }LMS/Teacher/gradeAdmin.html">성적 관리</a></li>
+				<li id="check"><a href="${root }LMS/Teacher/teacherTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+				<li id="check"><a style="cursor: default;" href="${root }LMS/Teacher/examWrite.html?name=<%=login.getEmpname()%>">◎&nbsp;&nbsp;시험 출제</a></li>
+				<li id="check"><a href="${root }LMS/Teacher/gradeAdmin.html">◎&nbsp;&nbsp;성적 관리</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">시험 출제</li>
+				<li class="title" style="margin-top:50px; margin-bottom:50px">[ 시험 출제 ]</li>
 				<li>
 				<form method="post" enctype="multipart/form-data">
 					<div id="exam_insert">

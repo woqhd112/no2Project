@@ -103,7 +103,7 @@ public class LMS_Common_Dao {
 			try{
 				list = new ArrayList<LMS_Emp_Dto>();
 			//페이지 조합
-				String sql="select * from (select rownum as emprn2, emprn, empname, empid,empemail,empphone,dept from (select rownum as emprn, empname, empid, empemail, empphone, dept from (select empname, empid, empemail, empphone, dept from emp1 order by empnum asc) order by emprn desc) order by emprn2 desc) where emprn2>=? and emprn2<=?";
+				String sql="select * from (select rownum as emprn2, emprn, empname, empid,empemail,empphone,dept from (select rownum as emprn, empname, empid, empemail, empphone, dept from (select empname, empid, empemail, empphone, dept from emp1 order by empname desc) order by emprn desc) order by emprn2 desc) where emprn2>=? and emprn2<=?";
 				pstmt=conn.prepareStatement(sql);
 				pstmt.setInt(1, startNum);
 				pstmt.setInt(2, endNum);

@@ -323,20 +323,19 @@
 			var pw2=document.getElementById('pw2').value;
           
 			if(pw==pw2){
-				$.post('member.html','id='+id+'&pw='+pw+'&name='+name+'&contact='+contact+'&address='+address, function(data){
-					  $.post('member.html','id='+id+'&pw='+pw+'&name='+name+'&contact='+contact+'&address='+address, function(data){
-            	 if(data=='fail'){
-            		 alert('회원가입이 정상적으로 작동하지 않았습니다.');
-                     $.post('${root}Home/login.html',function(){
-            			 window.location.href="${root}Home/login.html";
-            		 });
-           		 }else{
-	                if(data==1){
-	                   alert('회원가입이 완료되셨습니다!');
-	                   window.history.back();
-	                }
-	             }
-           	});
+				 $.post('member.html','id='+id+'&pw='+pw+'&name='+name+'&contact='+contact+'&address='+address, function(data){
+	            	 if(data=='fail'){
+	            		 alert('회원가입이 정상적으로 작동하지 않았습니다.');
+	                     $.post('${root}Home/login.html',function(){
+	            			 window.location.href="${root}Home/login.html";
+	            		 });
+	           		 }else{
+		                if(data==1){
+		                   alert('회원가입이 완료되셨습니다!');
+		                   window.history.back();
+		                }
+		             }
+           		});
 				return false;
 			}else{
 				$('#pw').val('');
@@ -602,7 +601,7 @@ v. 비트캠프를 이용하여 법령과 이 약관이 금지하거나 공서�
 				<div class="addr">
 					비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
 					Copyright © 비트캠프 All rights reserved.<br/>
-					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
 				</div>
 			</li>
 		</ul>

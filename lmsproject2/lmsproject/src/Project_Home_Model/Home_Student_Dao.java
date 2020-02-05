@@ -471,8 +471,8 @@ public class Home_Student_Dao {
 	public ArrayList<LMS_HireInfo_Dto> employSelectAll(int page) throws SQLException{
 		String sql="select * from (select rownum as rn2,rn,infonum,infotitle,cmpexp,infocnt from (select rownum as rn,infonum,infotitle,cmpexp,infocnt from (select infonum,infotitle,cmpexp,infocnt from HireInfo order by infonum asc) order by rn desc) order by rn2 desc) where rn2>=? and rn2<=?";
 		ArrayList<LMS_HireInfo_Dto> list=new ArrayList<LMS_HireInfo_Dto>();
-		int startNum=(page-1)*5+1;
-		int endNum=page*5;
+		int startNum=(page-1)*10+1;
+		int endNum=page*10;
 		try{
 			conn=MyOracle.getConnection();
 			pstmt=conn.prepareStatement(sql);

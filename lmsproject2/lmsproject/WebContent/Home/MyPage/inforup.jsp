@@ -174,24 +174,23 @@ Home_Student_Dto bean=(Home_Student_Dto)request.getAttribute("bean");
 		         return false;
         	 }
              $.post('inforup.html','stunum='+<%=login.getStunum()%>+'&stupw='+$('#edit1').val()+'&stuphone='+$('#edit2').val()+'&stuaddr='+$('#edit3').val(),function(data){
-				$.post('inforup.html','stunum='+<%=login.getStunum()%>+'&stupw='+$('#edit1').val()+'&stuphone='+$('#edit2').val()+'&stuaddr='+$('#edit3').val(),function(data){
-             if(data=='fail'){
-            	 alert('수정에 실패하였습니다.');
-            	 $.post('${root}Home/logout.html',function(){
-            		 window.location.href="${root}LMS/login.html";
-            	 });
-             }else{
-	             if(data==1){
-	                 alert('수정이 완료되었습니다. 새로운 정보로 로그인해주세요.');
-	               	 $.post('${root}Home/logout.html',function(){
-	               		window.location.href="${root}Home/login.html";
-	                 });
+	             if(data=='fail'){
+	            	 alert('수정에 실패하였습니다.');
+	            	 $.post('${root}Home/logout.html',function(){
+	            		 window.location.href="${root}LMS/login.html";
+	            	 });
+	             }else{
+		             if(data==1){
+		                 alert('수정이 완료되었습니다. 새로운 정보로 로그인해주세요.');
+		               	 $.post('${root}Home/logout.html',function(){
+		               		window.location.href="${root}Home/login.html";
+		                 });
+		             }
 	             }
-             }
-				return false;
-            });
-         }
-      });
+					return false;
+	            });
+	         }
+	      });
       
       $('#headerBtn a').eq(1).on("click",function(){
          var logout=confirm('로그아웃 하시겠습니까?');
@@ -257,22 +256,22 @@ Home_Student_Dto bean=(Home_Student_Dto)request.getAttribute("bean");
    <div class="wow fadeInUp">
       <div class="default">
          <div class="conHeader">
-            <div class="welcome"><%=login.getStuname() %>님이 로그인하였습니다.</div>
+				<div class="welcome">&nbsp;※&nbsp;&nbsp;<%=login.getStuname() %>&nbsp;님이 로그인하였습니다.</div>
             <div id="headerBtn">
-               <a style="cursor: default;" href="${root }Home/MyPage/inforup.html">정보수정</a>
+               <a style="cursor: default; font-weight: bold;" href="${root }Home/MyPage/inforup.html">정보수정</a>
                <a href="${root }Home/logout.html">로그아웃</a>
             </div>
          </div>
          <div class="box">
             <ul class="stuMenus">
-               <li id="check"><a href="${root }Home/MyPage/check.html">출석체크</a></li>
-               <li id="subinfor"><a href="${root }Home/MyPage/subInfor.html">수강정보</a></li>
-               <li id="examview"><a href="${root }Home/MyPage/examView.html">시험조회</a></li>
-               <li id="gradeoepn"><a href="${root }Home/MyPage/gradeOpen.html">성적열람</a></li>
-               <li id="employ"><a href="${root }Home/MyPage/employ.html">채용정보</a></li>
+               <li id="check"><a href="${root }Home/MyPage/check.html">◎&nbsp;&nbsp;출석체크</a></li>
+               <li id="subinfor"><a href="${root }Home/MyPage/subInfor.html">◎&nbsp;&nbsp;수강정보</a></li>
+               <li id="examview"><a href="${root }Home/MyPage/examView.html">◎&nbsp;&nbsp;시험조회</a></li>
+               <li id="gradeoepn"><a href="${root }Home/MyPage/gradeOpen.html">◎&nbsp;&nbsp;성적열람</a></li>
+               <li id="employ"><a href="${root }Home/MyPage/employ.html">◎&nbsp;&nbsp;채용정보</a></li>
             </ul>
             <ul class="mainbox">
-               <li class="title" style="margin-top:50px; margin-bottom: 50px">정보 수정</li>
+               <li class="title" style="margin-top:50px; margin-bottom: 50px">[ 정보 수정 ]</li>
                <li>
                        <table class="infor">
                           <tr>
@@ -315,7 +314,7 @@ Home_Student_Dto bean=(Home_Student_Dto)request.getAttribute("bean");
             <div class="addr">
                비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
                Copyright © 비트캠프 All rights reserved.<br/>
-               <button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+               <button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
             </div>
          </li>
       </ul>

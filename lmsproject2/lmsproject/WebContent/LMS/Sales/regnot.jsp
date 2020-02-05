@@ -20,7 +20,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(2){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(2) a{
 		color: white;
@@ -57,8 +57,8 @@
 <script type="text/javascript" src="../../js/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="../../js/jquery.bxslider.js"></script>
 <script type="text/javascript" src="../../js/wow.js"></script>
-<script type="text/javascript">
 <c:url value="/" var="root"></c:url>
+<script type="text/javascript">
 <%
 LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 %>
@@ -119,24 +119,24 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">영업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;영업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
 				<a href="${root }LMS/Sales/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
 			</div>
 		</div>
-		<div class="box">
+		<div class="box" >
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">교직원 정보</a></li>
-				<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/regnot.html">모집공고 등록</a></li>
-				<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">학생 수강등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+				<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/regnot.html">◎&nbsp;&nbsp;모집공고 등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">◎&nbsp;&nbsp;학생 수강등록</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:10px">모집 공고</li>
+				<li class="title" style="margin-top:50px;">[ 모집공고 조회 ]</li>
 				<li>
-					<input style=" margin-bottom: 15px;" class="addbtn" type="button" onclick="location.href='${root}LMS/Sales/regnot_insert.html'" value="등록">
+					<input class="addbtn" type="button" onclick="location.href='${root}LMS/Sales/regnot_insert.html'" value="등록">
 				</li>
-				<li>
+				<li style="line-height: 0px;">
 					<div id="regnot">
 					<c:forEach items="${alist }" var="bean">
 						<div id="regnottitle">
@@ -155,7 +155,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 							
 							if(prev==true){
 						%>
-							<a class="prnx" href="${root }LMS/Sales/regnot.html?page=<%=begin-10 %>">＜</a>
+							<a class="prnx" href="${root }LMS/Sales/regnot.html?page=<%=begin-5 %>">＜</a>
 						<%	}
 							for(int i=begin; i<=end; i++){
 								if(page1==i){

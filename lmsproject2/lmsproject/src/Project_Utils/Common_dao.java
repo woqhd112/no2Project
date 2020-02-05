@@ -175,7 +175,6 @@ public class Common_dao {
 	//학생의 출석정보를 리턴
 	public ArrayList<Object[]> attendTimeSelectAll(String teachername) throws SQLException{
 		ArrayList<Object[]> list=new ArrayList<Object[]>();
-		Object[] obj=null;
 		String sql="select stunum,arrtime,leavetime,attendstat,ontime,late,absent,checkpct,attendpct from student inner join emp1 on student.teachername=emp1.empname inner join attendtime on student.stunum=attendtime.stunum inner join attendinfo on student.stunum=attendinfo.stunum where student.teachername=?";
 		try{
 			conn=MyOracle.getConnection();
@@ -195,7 +194,7 @@ public class Common_dao {
 				bean1.setCheckpct(rs.getInt("checkpct"));
 				bean1.setAttendpct(rs.getInt("attendpct"));
 				
-				obj=new Object[]{bean1,bean2};
+				Object[] obj=new Object[]{bean1,bean2};
 				list.add(obj);
 			}
 		}finally{

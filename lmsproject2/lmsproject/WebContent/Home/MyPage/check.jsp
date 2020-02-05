@@ -14,9 +14,20 @@
 <link rel="stylesheet" href="../../css/reset.css" />
 <link rel="stylesheet" href="../../css/index.css" />
 <style type="text/css">
+	.default .box .mainbox .title{
+		position: relative;
+		top: -145px;
+		padding: 10px;
+		padding-left: 20px;
+		background-color: #f9f9f9;
+		text-align: left;
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
 	.stuMenus>li:FIRST-CHILD{
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:FIRST-CHILD a{
 		color: white;
@@ -121,7 +132,7 @@
 				$('.btn3').prop("disabled", true).css("color","black").css("background-color","#f0f0f0");
 				$('.btn3').prop("disabled", false);
 				var data=${login.stunum}+',arrive';
-				$.post('../../Home/MyPage/check.html','data='+data,function(){
+				$.post('../../Home/MyPage/check.html','data='+data,function(data1){
 					if(data1=='fail'){
 						alert('제대로 작동하지 않았습니다. 재로그인 부탁드립니다.');
 					}else{
@@ -235,7 +246,7 @@
 	<div class="wow fadeInUp">
 		<div class="default">
 			<div class="conHeader">
-				<div class="welcome"><%=login.getStuname() %>님이 로그인하였습니다.</div>
+				<div class="welcome">&nbsp;※&nbsp;&nbsp;<%=login.getStuname() %>&nbsp;님이 로그인하였습니다.</div>
 				<div id="headerBtn">
 					<a href="${root }Home/MyPage/inforup.html">정보수정</a>
 					<a href="${root }Home/logout.html">로그아웃</a>
@@ -243,11 +254,11 @@
 			</div>
 			<div class="box">
 				<ul class="stuMenus">
-					<li id="check"><a style="cursor: default;" href="${root }Home/MyPage/check.html">출석체크</a></li>
-					<li id="subinfor"><a href="${root }Home/MyPage/subInfor.html">수강정보</a></li>
-					<li id="examview"><a href="${root }Home/MyPage/examView.html">시험조회</a></li>
-					<li id="gradeoepn"><a href="${root }Home/MyPage/gradeOpen.html">성적열람</a></li>
-					<li id="employ"><a href="${root }Home/MyPage/employ.html">채용정보</a></li>
+					<li id="check"><a style="cursor: default;" href="${root }Home/MyPage/check.html">◎&nbsp;&nbsp;출석체크</a></li>
+					<li id="subinfor"><a href="${root }Home/MyPage/subInfor.html">◎&nbsp;&nbsp;수강정보</a></li>
+					<li id="examview"><a href="${root }Home/MyPage/examView.html">◎&nbsp;&nbsp;시험조회</a></li>
+					<li id="gradeoepn"><a href="${root }Home/MyPage/gradeOpen.html">◎&nbsp;&nbsp;성적열람</a></li>
+					<li id="employ"><a href="${root }Home/MyPage/employ.html">◎&nbsp;&nbsp;채용정보</a></li>
 				</ul>
 				<ul class="mainbox">
 				<%Date today=new Date();
@@ -256,9 +267,9 @@
 				%>
 					<li><img class="checkimg" src="../../imgs/logo/colorlogo2.png" /></li>
 					<%if(login.getClassname().equals("미배정")){ %>
-						<li class="title">반을 배정받지 않았습니다.</li>
+						<li class="title">[ 반을 배정받지 않았습니다. ]</li>
 					<%}else{ %>
-						<li class="title"><%=date1.format(today) %> 출석체크</li>
+						<li class="title">[ <%=date1.format(today) %> 출석체크 ]</li>
 					<%} %>
 					<li class="notice">에 입실하였습니다.</li>
 					<li class="margin"><button type="submit" class="btn2">입실</button></li>
@@ -279,7 +290,7 @@
 				<div class="addr">
 					비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
 					Copyright © 비트캠프 All rights reserved.<br/>
-					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
 				</div>
 			</li>
 		</ul>

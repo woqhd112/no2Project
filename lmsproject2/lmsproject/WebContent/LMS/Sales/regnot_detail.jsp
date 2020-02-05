@@ -18,7 +18,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(2){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(2) a{
 		color: white;
@@ -148,6 +148,8 @@ LMS_Class_Dto bean2=(LMS_Class_Dto)obj[1];
 						$('.btn4').hide();
 						$('.btn3').show();
 						$('.btn1').show();
+				}else{
+					return false;
 				}
 			});
 		});
@@ -188,7 +190,7 @@ LMS_Class_Dto bean2=(LMS_Class_Dto)obj[1];
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">영업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;영업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
 				<a href="${root }LMS/Sales/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
@@ -196,12 +198,12 @@ LMS_Class_Dto bean2=(LMS_Class_Dto)obj[1];
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">교직원 정보</a></li>
-				<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/regnot.html">모집공고 등록</a></li>
-				<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">학생 수강등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/salesTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+				<li id="check"><a style="cursor: default;" href="${root }LMS/Sales/regnot.html">◎&nbsp;&nbsp;모집공고 등록</a></li>
+				<li id="check"><a href="${root }LMS/Sales/studentSubUp.html">◎&nbsp;&nbsp;학생 수강등록</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:30px">공고 수정</li>
+				<li class="title" style="margin-top:50px;">[ 모집공고 조회 ]</li>
 				<li>
 					<form method="post" enctype="multipart/form-data">
 					<div id="regnotdetail">
@@ -246,7 +248,7 @@ LMS_Class_Dto bean2=(LMS_Class_Dto)obj[1];
 							</tbody>
 						</table>
 					</div>
-					<div class="btnbox">
+					<div class="btnbox" style="margin-top: 0px;">
 						<button class="btn1" type="button" >수정</button>
 						<button class="btn1_1" type="submit" >완료</button>
 						<button class="btn2" type="button" >삭제</button>

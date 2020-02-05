@@ -15,7 +15,7 @@
 <style type="text/css">
 	.stuMenus>li:nth-child(3){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(3) a{
 		color: white;
@@ -115,7 +115,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 <body>
 	<div class="lms">
 		<div class="conHeader">
-			<div class="welcome">행정팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;행정팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 			<div id="headerBtn">
 				<a href="${root }LMS/Govern/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 				<a href="${root }LMS/logout.html">로그아웃</a>
@@ -123,17 +123,17 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 		</div>
 		<div class="box">
 			<ul class="stuMenus">
-				<li id="check"><a href="${root }LMS/Govern/staffAdmin.html">교직원 관리</a></li>
-				<li id="check"><a href="${root }LMS/Govern/subCreate.html">강좌 개설</a></li>
-				<li id="check"><a style="cursor: default;" href="${root }LMS/Govern/studentAdmin.html">수강생 관리</a></li>
-				<li id="check"><a href="${root }LMS/Govern/notice.html">공지사항 관리</a></li>
-				<li id="check"><a href="${root }LMS/Govern/faq.html">FAQ 관리</a></li>
+				<li id="check"><a href="${root }LMS/Govern/staffAdmin.html">◎&nbsp;&nbsp;교직원 관리</a></li>
+				<li id="check"><a href="${root }LMS/Govern/subCreate.html">◎&nbsp;&nbsp;강좌 개설</a></li>
+				<li id="check"><a style="cursor: default;" href="${root }LMS/Govern/studentAdmin.html">◎&nbsp;&nbsp;수강생 관리</a></li>
+				<li id="check"><a href="${root }LMS/Govern/notice.html">◎&nbsp;&nbsp;공지사항 관리</a></li>
+				<li id="check"><a href="${root }LMS/Govern/faq.html">◎&nbsp;&nbsp;FAQ 관리</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">수강생 관리</li>	
+				<li class="title" style="margin-top:50px;">[ 수강생 관리 ]</li>	
 				<li>
 					<div id="info">
-						<table>
+						<table style="margin-top:30px;">
 							<thead>
 								<tr>
 									<th style="width:15%">이름</th>
@@ -175,7 +175,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 							System.out.println("첫페이지,마지막페이지 : "+begin+","+end);
 							if(prev==true){
 						%>
-							<a class="prnx" href="${root }LMS/Govern/studentAdmin.html?page=<%=begin-10 %>&search=<%=search%>&keyword=<%=keyword%>">＜</a>
+							<a class="prnx" href="${root }LMS/Govern/studentAdmin.html?page=<%=begin-5 %>&search=<%=search%>&keyword=<%=keyword%>">＜</a>
 						<%	}
 							for(int i=begin; i<=end; i++){
 								if(page1==i){
@@ -192,12 +192,12 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 					</div>
 						<div id="search">
 							<form action="${root }LMS/Govern/studentAdmin.html">
-								<select class="search" name="search">
+								<select style="height: 32px; font-size:12px;" class="search" name="search">
 									<option value="stuname">이름</option>
 								</select>
-								<input class="box" type="text" name="keyword" value="">
-								<input class="searchbtn" type="submit" value="검색">
-		              			<input class="resetbtn" type="button" onclick="location.href='./studentAdmin.html'" value="초기화">
+								<input style="position: relative; top:-1px;" class="box" type="text" name="keyword" value="">
+								<input style="border-radius: 3px; height: 32px; font-size:12px;" class="searchbtn" type="submit" value="검색">
+		              			<input style="border-radius: 3px; height: 32px; font-size:12px;" class="resetbtn" type="button" onclick="location.href='./studentAdmin.html'" value="초기화">
 							</form>
 						</div>
 					</div>

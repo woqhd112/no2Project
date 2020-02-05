@@ -1,5 +1,5 @@
 	.addbtn{
-		border-radius: 3px 3px 3px 3px;
+		border-radius: 3px;
 		position: relative;
 		left: 37%;
 		border: 1px solid silver;
@@ -157,9 +157,7 @@
 		border-bottom: 2px solid #313436;
 	}
 	#notice thead th{
-		height: 50px;
-		font-size: 14px;
-		font-weight: bold;
+		font-size: 12px;
 		padding-bottom: 15px;
 	}
 	#notice tbody tr:nth-child(2n-1){
@@ -181,7 +179,7 @@
 		margin-left: 10px;
 		font-size: 13px;
 		font-weight: bold;
-		padding: 15px;
+		padding: 12px;
 	}
 	#notice #page{
 		font-size: 13px;

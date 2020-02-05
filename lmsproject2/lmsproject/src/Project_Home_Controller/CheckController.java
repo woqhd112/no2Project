@@ -95,6 +95,9 @@ public class CheckController extends HttpServlet{
 				out.close();
 			}
 		}
+		out.print("ok");
+		out.flush();
+		out.close();
 	}
 	
 }

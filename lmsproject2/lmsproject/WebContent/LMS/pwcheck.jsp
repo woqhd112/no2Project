@@ -54,7 +54,7 @@
 				$.post('pwcheck.html','id='+name+'&num='+num+'&job='+result, function(data){
 					console.log(data);
 					if(data!="wow"){
-						alert('당신의 아이디는 ['+data+'] 입니다.');
+						alert('당신의 패스워드는 ['+data+'] 입니다.');
 						location.href = 'lmsLogin.html';
 					}else{
 						$('#name').val("");

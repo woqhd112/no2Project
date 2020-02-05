@@ -45,7 +45,7 @@ public class EmployController extends HttpServlet{
 		}
 		Paging paging=new Paging();
 		paging.setPage(page);
-		paging.setTotalCount2(totalCount);
+		paging.setTotalCount(totalCount);
 		System.out.println("ÇöÀç page : "+page);
 		
 		ArrayList<LMS_HireInfo_Dto> list=new ArrayList<LMS_HireInfo_Dto>();

@@ -3,6 +3,7 @@
 	    border-radius: 5px 5px 5px 5px;
 		position: relative;
 		left: 37%;
+		top: -30px;
 		border: 1px solid silver;
 		background-color: white;
 		font-size: 13px;
@@ -10,6 +11,8 @@
 		height: 30px;
 	}
 	#regnot{
+		position: relative;
+		top: -20px;
 		width: 80%;
 		margin: 0px auto;
 	}
@@ -53,6 +56,8 @@
 	
 /*			모집 공고 디테일, 수정		*/	
 	#regnotdetail{
+		position: relative;
+		top: -20px;
 		width: 80%;
 		margin: 0px auto;
 	}
@@ -128,7 +133,8 @@
 		resize: none;
 	}
 	#regnotbtns{
-		margin-top: 20px;
+		position: relative;
+		top: -20px;
 		text-align: center;
 	}
 	#regnotbtns .btn1
@@ -232,8 +238,7 @@
 		border-bottom: 2px solid #313436;
 	}
 	#subup thead th{
-		font-size: 14px;
-		font-weight: bold;
+		font-size: 12px;
 		padding-bottom: 15px;
 	}
 	#subup thead th:FIRST-CHILD{

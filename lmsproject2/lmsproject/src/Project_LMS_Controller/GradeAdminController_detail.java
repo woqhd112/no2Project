@@ -21,7 +21,7 @@ public class GradeAdminController_detail extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		int stunum=Integer.parseInt(req.getParameter("num"));
-		String empname=req.getParameter("name");
+		String empname=req.getParameter("empname");
 		System.out.println("넘어온 파라미터 : "+stunum+","+empname);
 		
 		LMS_TeacherTeam_Dao dao=new LMS_TeacherTeam_Dao();

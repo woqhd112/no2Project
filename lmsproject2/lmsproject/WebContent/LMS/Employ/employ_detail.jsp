@@ -16,7 +16,7 @@
 <style type="text/css">
    .stuMenus>li:nth-child(2){
       font-weight: bold;
-      background-color: gray;
+	  background-color: #304047;	
    }
    .stuMenus>li:nth-child(2) a{
       color: white;
@@ -142,7 +142,7 @@ LMS_HireInfo_Dto bean = (LMS_HireInfo_Dto)request.getAttribute("bean");
    <div class="wow fadeInUp">
       <div class="lms">
          <div class="conHeader">
-            <div class="welcome">취업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+			<div class="welcome">&nbsp;※&nbsp;&nbsp;취업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
             <div id="headerBtn">
                <a href="${root }LMS/Employ/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
                <a href="${root }LMS/logout.html">로그아웃</a>
@@ -150,12 +150,12 @@ LMS_HireInfo_Dto bean = (LMS_HireInfo_Dto)request.getAttribute("bean");
          </div>
          <div class="box">
             <ul class="stuMenus">
-               <li id="check"><a href="${root }LMS/Employ/employTeam.html">교직원 정보</a></li>
-               <li id="check"><a style="cursor: default;" href="${root }LMS/Employ/employ.html">채용정보 등록</a></li>
-               <li id="check"><a href="${root }LMS/Employ/gradeOpen.html">학생 성적조회</a></li>
+               <li id="check"><a href="${root }LMS/Employ/employTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+               <li id="check"><a style="cursor: default;" href="${root }LMS/Employ/employ.html">◎&nbsp;&nbsp;채용정보 등록</a></li>
+               <li id="check"><a href="${root }LMS/Employ/gradeOpen.html">◎&nbsp;&nbsp;학생 성적조회</a></li>
             </ul>
             <ul class="mainbox">
-               <li class="title" style="margin-top:50px; margin-bottom:50px">채용정보 등록</li>
+               <li class="title" style="margin-top:50px;">[ 채용정보 등록 ]</li>
                <li>
                   <div id="employ_detail">
                      <table>

@@ -19,7 +19,7 @@
 	}
 	.stuMenus>li:nth-child(3){
 		font-weight: bold;
-		background-color: gray;
+		background-color: #304047;
 	}
 	.stuMenus>li:nth-child(3) a{
 		color: white;
@@ -120,7 +120,7 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 	<div class="wow fadeInUp">
 		<div class="lms">
 			<div class="conHeader">
-				<div class="welcome">취업팀 [<%=login.getEmpname() %>]님이 로그인하였습니다.</div>
+				<div class="welcome">&nbsp;※&nbsp;&nbsp;취업팀 <%=login.getEmpname() %>님이 로그인하였습니다.</div>
 				<div id="headerBtn">
 					<a href="${root }LMS/Employ/inforup.html?empnum=<%=login.getEmpnum()%>">정보수정</a>
 					<a href="${root }LMS/logout.html">로그아웃</a>
@@ -128,20 +128,20 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 			</div>
 			<div class="box">
 				<ul class="stuMenus">
-					<li id="check"><a href="${root }LMS/Employ/employTeam.html">교직원 정보</a></li>
-					<li id="check"><a href="${root }LMS/Employ/employ.html">채용정보 등록</a></li>
-					<li id="check"><a style="cursor: default;" href="${root }LMS/Employ/gradeOpen.html">학생 성적조회</a></li>
+					<li id="check"><a href="${root }LMS/Employ/employTeam.html">◎&nbsp;&nbsp;교직원 정보</a></li>
+					<li id="check"><a href="${root }LMS/Employ/employ.html">◎&nbsp;&nbsp;채용정보 등록</a></li>
+					<li id="check"><a style="cursor: default;" href="${root }LMS/Employ/gradeOpen.html">◎&nbsp;&nbsp;학생 성적조회</a></li>
 				</ul>
 				<ul class="mainbox">
-					<li class="title" style="margin-top:50px; margin-bottom:50px">학생 성적조회</li>
+					<li class="title" style="margin-top:50px;">[ 학생 성적조회 ]</li>
 					<li>
 						<div id="subup">
 							<table>
 								<thead>
 									<tr>
-										<th style="width: 15%">이름</th>
+										<th style="width: 20%">이름</th>
 										<th>강좌명</th>
-										<th style="width: 15%">출석률</th>
+										<th style="width: 20%">출석률</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -182,13 +182,13 @@ LMS_Emp_Dto login=(LMS_Emp_Dto)session.getAttribute("lmslogin");
 							</div>
 							<div id="search">
 								<form action="">
-			                        <select class="search" name="search">
+			                        <select style="font-size: 12px; height: 32px;" class="search" name="search">
 										<option value="stuname">이름</option>
 										<option value="classname">강좌명</option>
 			                        </select>
-				                    <input class="box" type="text" name="keyword" value="">
-				                    <input class="searchbtn" type="submit" value="검색">
-									<input class="resetbtn" type="button" onclick="location.href='./gradeOpen.html'" value="초기화">
+				                    <input style="position: relative; top:-1px;" class="box" type="text" name="keyword" value="">
+				                    <input style="border-radius: 3px; height: 32px; font-size:12px;" class="searchbtn" type="submit" value="검색">
+									<input style="border-radius: 3px; height: 32px; font-size:12px;" class="resetbtn" type="button" onclick="location.href='./gradeOpen.html'" value="초기화">
 								</form>
 							</div>
 						</div>

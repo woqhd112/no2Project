@@ -1,10 +1,10 @@
 
-
 /*		채용공고			*/
 	.addbtn{
 	    border-radius: 5px 5px 5px 5px;
 		position: relative;
-		left: 36%;
+		left: 37%;
+		top: -10px;
 		border: 1px solid silver;
 		background-color: white;
 		font-size: 13px;
@@ -14,13 +14,13 @@
 	#employ table{
 		width: 80%;
 		margin: 0px auto;
+		margin-top: 10px;
 	}
 	#employ thead{
 		border-bottom: 2px solid #313436;
 	}
 	#employ thead th{
-		font-size: 14px;
-		font-weight: bold;
+		font-size: 12px;
 		padding-bottom: 15px;
 	}
 	#employ thead th:nth-child(2){
@@ -48,8 +48,7 @@
 		font-size: 13px;
 		font-weight: bold;
 		transition: width 1s;
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding: 12px;
 	}
 	#employ tbody td:nth-child(2)>a:hover{
 		color:#881e1e;
@@ -136,13 +135,13 @@
 	}
 	#employ_detail th{
 		width: 130px;
-		height: 40px;
+		height: 50px;
 		font-size: 14px;
 		font-weight: bold;
 		background-color: rgba(192, 192, 192, 0.1);
 	}
 	#employ_detail td{
-		height: 40px;
+		height: 50px;
 		font-size: 11px;
 		padding-left: 10px;
 	}
@@ -161,6 +160,8 @@
 	
 /*			학생 성적조회			*/
 	#subup table{
+		position: relative;
+		top: 0px;
 		width: 80%;
 		margin: 0px auto;
 	}
@@ -168,8 +169,7 @@
 		border-bottom: 2px solid #313436;
 	}
 	#subup thead th{
-		font-size: 14px;
-		font-weight: bold;
+		font-size: 12px;
 		padding-bottom: 15px;
 	}
 	#subup thead th:FIRST-CHILD{
@@ -191,7 +191,7 @@
 		margin-left: 10px;
 		font-size: 13px;
 		font-weight: bold;
-		padding: 15px;
+		padding: 12px;
 	}
 	#subup #page{
 		font-size: 13px;
@@ -200,35 +200,6 @@
 	}
 	#subup #page .prnx{
 		font-size: 12px;
-	}
-	#subup #search{
-		text-align: center;
-		margin: 0px auto;
-		margin-bottom: 30px;
-	}
-	#subup #search .search{
-		font-size: 13px;
-		width: 50px;
-		height: 30px;
-	}
-	#subup #search .box{
-		width: 30%;
-		height: 27px;
-	}
-	#subup #search .searchbtn{
-		border: 1px solid silver;
-		background-color: white;
-		font-size: 13px;
-		width: 50px;
-		height: 30px;
-	}
-	#subup #search .resetbtn{
-		font-size: 13px;
-		background-color: #313436;
-		color: white;
-		border: 0px;
-		width: 50px;
-		height: 30px;
 	}
 
 	

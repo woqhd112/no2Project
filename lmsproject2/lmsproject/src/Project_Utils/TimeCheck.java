@@ -44,6 +44,7 @@ public class TimeCheck {
 		return attendstat;
 	}
 	
+	//현재 진행중인 강좌 시작,마감날짜 가지고 총 일수 구하는곳
 	public int subAttendTime(String startdate,String enddate){
 		this.startdate=startdate;
 		this.enddate=enddate;
@@ -68,7 +69,7 @@ public class TimeCheck {
 	
 	//현재시각 리턴
 	public String getTime(){
-		date2=new SimpleDateFormat("yyyy년MM월dd일ahh시mm분ss초");
+		date2=new SimpleDateFormat("a hh시 mm분");
 		time2=date2.format(today);
 		return time2;
 	}
@@ -83,6 +84,7 @@ public class TimeCheck {
 		int ontime=check1.getOntime();
 		int late=check1.getLate();
 		int absent=check1.getAbsent();
+		int attendstat=check2.getAttendstat();
 		String leavetime=check2.getLeavetime();
 		int attendpct=0;
 		int checkpct=0;
@@ -90,7 +92,7 @@ public class TimeCheck {
 		int[] checking=null;
 		
 		//입실버튼시 정상출석이고 퇴실버튼 눌렀을때		-처리 정상출석+1
-		if(attendstat==1&&leavetime!=""){
+		if(attendstat==1&&!leavetime.equals("")){
 			System.out.println("정상출석 접근");
 			ontime+=1;
 			try{
@@ -105,7 +107,7 @@ public class TimeCheck {
 			return checking;
 			
 		//입실버튼시 지각이고 퇴실버튼 눌렀을때		-처리 지각+1
-		}else if(attendstat==2&&leavetime!=""){
+		}else if(attendstat==2&&!leavetime.equals("")){
 			System.out.println("지각 접근");
 			late+=1;
 			try{
@@ -120,7 +122,7 @@ public class TimeCheck {
 			return checking;
 			
 		//입실버튼시 정상출석이고 퇴실버튼 안눌렀을때		-처리 결석+1
-		}else if(attendstat==1&&leavetime==""){
+		}else if(attendstat==1&&leavetime.equals("")){
 			System.out.println("퇴실버튼 안누른 정상출석 접근");
 			absent+=1;
 			try{
@@ -135,7 +137,7 @@ public class TimeCheck {
 			return checking;
 			
 		//입실버튼시 지각이고 퇴실버튼 안눌렀을때		-처리 결석+1
-		}else if(attendstat==2&&leavetime==""){
+		}else if(attendstat==2&&leavetime.equals("")){
 			System.out.println("퇴실버튼 안누른 지각 접근");
 			absent+=1;
 			try{

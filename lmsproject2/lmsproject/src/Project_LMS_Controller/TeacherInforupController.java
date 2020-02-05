@@ -32,6 +32,7 @@ public class TeacherInforupController extends HttpServlet{
 		//강좌명 뽑는곳
 		try {
 			LMS_Class_Dto bean=com.teachernameReturn(empname);
+			
 			req.setAttribute("bean4", bean);
 		} catch (SQLException e1) {
 			System.out.println("강사팀 정보수정 화면출력-강좌명출력 에러");

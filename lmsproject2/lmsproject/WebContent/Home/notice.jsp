@@ -214,13 +214,13 @@
 			</div>
 			<div id="search">
 				<form action="${root }Home/notice.html">
-						<select class="search" name="search">
+						<select style=" border-radius: 3px; font-size: 12px; height: 31px;" class="search" name="search">
 							<option value="nottitle">제목</option>
 							<option value="notcontent">내용</option>
 						</select>
-						<input class="box" type="text" name="keyword" value="<%=keyword%>">
-						<input class="searchbtn" type="submit" value="검색">
-              			<input class="resetbtn" type="button" onclick="location.href='./notice.html'" value="초기화">
+						<input style="height: 30px; position: relative; top:-1px;" class="box" type="text" name="keyword" value="<%=keyword%>">
+						<input style=" border-radius: 3px; font-size: 12px; height: 32px;" class="searchbtn" type="submit" value="검색">
+              			<input style=" border-radius: 3px; font-size: 12px; height: 32px;" class="resetbtn" type="button" onclick="location.href='./notice.html'" value="초기화">
 				</form>
 			</div>
 		</div>
@@ -236,7 +236,7 @@
 				<div class="addr">
 					비트캠프 서울시 서초구 강남대로 459 (서초동, 백암빌딩) | 대표이사 : 조현정<br/>
 					Copyright © 비트캠프 All rights reserved.<br/>
-					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=700, top=20, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
+					<button id="loginButton" type="button" onclick="window.open('${root}LMS/lmsLogin.html', 'LMS 관리자시스템 | 비트캠프', 'width=1200, height=750, top=0, left=100, location=no, status=no, directories=no, scrollbars=yes');">관리자 로그인</button>
 				</div>
 			</li>
 		</ul>

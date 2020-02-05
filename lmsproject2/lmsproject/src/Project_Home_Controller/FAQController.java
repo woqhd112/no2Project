@@ -29,7 +29,7 @@ public class FAQController extends HttpServlet{
 		Common_dao com=new Common_dao();
 		
 		int totalCount=0;	//로우갯수
-		String tablename="regnot";	//테이블이름
+		String tablename="faq";	//테이블이름
 		try {
 			totalCount=com.tableRowReturn(tablename);
 		} catch (SQLException e) {
