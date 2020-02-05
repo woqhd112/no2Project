@@ -141,6 +141,18 @@ LMS_Class_Dto bean2=(LMS_Class_Dto)obj[1];
 					return false;
 				}
 				if(con){
+						var fileCheck = document.getElementById("ex_file1").value;
+						if(!fileCheck){
+					        alert("파일을 첨부해 주세요");
+							$('#ex_file1').focus();
+					        return false;
+					    }
+						var fileCheck = document.getElementById("ex_file2").value;
+						if(!fileCheck){
+					        alert("파일을 첨부해 주세요");
+							$('#ex_file2').focus();
+					        return false;
+					    }
 						$('tbody>tr>td>textarea').attr('readonly','readonly').blur();
 						$('.btn2').show();
 						alert('수정이 완료되었습니다.');

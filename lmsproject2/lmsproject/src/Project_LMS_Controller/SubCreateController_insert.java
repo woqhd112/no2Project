@@ -48,8 +48,19 @@ public class SubCreateController_insert extends HttpServlet{
 		
 		String classname=req.getParameter("classname").trim();
 		String teachername=req.getParameter("teachername").trim();
-		String startdate=req.getParameter("start");
-		String enddate=req.getParameter("end");
+		String[] start=req.getParameter("start").split("-");
+		String[] end=req.getParameter("end").split("-");
+		
+		String start1=start[0];
+		String start2=start[1];
+		String start3=start[2];
+		String end1=end[0];
+		String end2=end[1];
+		String end3=end[2];
+		
+		String startdate=start1+"/"+start2+"/"+start3;
+		String enddate=end1+"/"+end2+"/"+end3;
+		
 		
 		System.out.println("넘어온 파라미터값 : "+classname+","+teachername+","+startdate+","+enddate);
 		String empname=null;

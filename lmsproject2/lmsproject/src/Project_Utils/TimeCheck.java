@@ -153,7 +153,7 @@ public class TimeCheck {
 			
 		//입실버튼 못눌렀을때		-처리 결석+1
 		}else if(attendstat==3){
-			System.out.println("입실버튼 안누른 상태 접근");
+			System.out.println("입실버튼 안누른 상태,결석 접근");
 			absent+=1;
 			try{
 				attendpct=(int) Math.round((((double)(ontime+late+absent)/this.diffDays)*100));

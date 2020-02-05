@@ -166,7 +166,6 @@
 			<%}else{%>
 				$('.default .box .mainbox .notice').eq(0).text('출석마감 되었습니다. 재접속 해주세요.');
 			<%}%>                                                             
-			$('.default .box .mainbox .notice').eq(0).text('<%=bean.getArrtime()%>에 입실하였습니다.');
 			$('.btn2').prop("disabled", true).css("color","silver").css("background-color","gray");
 			$('.btn3').prop("disabled", true).css("color","black").css("background-color","#f0f0f0");
 			$('.btn3').prop("disabled", false);

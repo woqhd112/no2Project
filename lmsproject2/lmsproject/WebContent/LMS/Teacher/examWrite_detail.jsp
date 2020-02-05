@@ -170,6 +170,18 @@ LMS_Class_Dto bean1=(LMS_Class_Dto)request.getAttribute("bean4");
 		$('#btn2').on('click',function(){
 			var con=confirm('수정하시면 기존파일을 덮어씌우게 됩니다. 정말 수정 하시겠습니까?');
 			if(con){
+				var fileCheck = document.getElementById("ex_file1").value;
+				if(!fileCheck){
+			        alert("파일을 첨부해 주세요");
+					$('#ex_file1').focus();
+			        return false;
+			    }
+				var fileCheck = document.getElementById("ex_file2").value;
+				if(!fileCheck){
+			        alert("파일을 첨부해 주세요");
+					$('#ex_file2').focus();
+			        return false;
+			    }
 				var sub=$('input[type=text]').val();
 				var content=$('.textarea').val();
 				if(sub=="" || content==""){

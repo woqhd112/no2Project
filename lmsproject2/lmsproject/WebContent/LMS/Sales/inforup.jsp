@@ -165,7 +165,7 @@ LMS_Emp_Dto bean=(LMS_Emp_Dto)request.getAttribute("bean");
     	        $('#edit3').attr('placeholder', '공백은 입력하실 수 없습니다.');
 	            return false;
 	        }
-	    	if(!/^[0-9]{10,20}$/.test(edit3) || numLength>11 || numLength<10){
+	    	if(!/^[0-9]{10,11}$/.test(edit3) || numLength>11 || numLength<10){
     	        $('#edit3').val('');
     	        $('#edit3').addClass("error");
     	        $('#edit3').attr('placeholder', '10~11자리 숫자로 입력해주세요.');

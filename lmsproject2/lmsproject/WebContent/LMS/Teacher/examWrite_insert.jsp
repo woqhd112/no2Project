@@ -258,7 +258,7 @@ LMS_Class_Dto bean=(LMS_Class_Dto)request.getAttribute("bean4");
 				<li id="check"><a href="${root }LMS/Teacher/gradeAdmin.html">◎&nbsp;&nbsp;성적 관리</a></li>
 			</ul>
 			<ul class="mainbox">
-				<li class="title" style="margin-top:50px; margin-bottom:50px">[ 시험 출제 ]</li>
+				<li class="title" style="margin-top:50px;">[ 시험 출제 ]</li>
 				<li>
 				<form method="post" enctype="multipart/form-data">
 					<div id="exam_insert">
