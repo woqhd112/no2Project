@@ -1,0 +1,305 @@
+/*		모집공고			*/
+	.addbtn{
+	    border-radius: 5px 5px 5px 5px;
+		position: relative;
+		left: 37%;
+		top: -30px;
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#regnot{
+		position: relative;
+		top: -20px;
+		width: 80%;
+		margin: 0px auto;
+	}
+	#regnot #regnottitle{
+		margin-bottom: 15px;
+	}
+	#regnot #regnottitle:nth-child(2n-1){ 
+	    border-radius: 5px 5px 5px 5px;
+		widht: 100%;
+		height: 60x;
+		background-color: #044879;
+    	background-image: url(../../imgs/submenu/regnot_title.jpg);                                                               
+		background-size: cover;
+	}
+	#regnot #regnottitle:nth-child(2n) { 
+	    border-radius: 5px 5px 5px 5px;
+		widht: 100%;
+		height: 60px;
+		background-color: #044879;
+    	background-image: url(../../imgs/submenu/regnot_title2.jpg);                                                               
+		background-size: cover;
+	}
+	#regnot #regnottitle a{
+		display: block;
+		line-height: 60px;
+		font-size: 14px;
+		font-weidht: bold;
+		margin: 0px auto;
+		color: white;
+	}
+	#regnot #regnottitle a:hover{
+		text-decoration: underline;
+	 	transition: 0.5s;
+      	transition-timing-function: ease-in-out;
+		line-height: 60px;
+		font-size: 14px;
+		font-weidht: bold;
+		margin: 0px auto;
+		color: #a5fff7;
+	}
+	
+/*			모집 공고 디테일, 수정		*/	
+	#regnotdetail{
+		position: relative;
+		top: -20px;
+		width: 80%;
+		margin: 0px auto;
+	}
+	#regnotdetail table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	#regnotdetail thead{
+		border-bottom: 1px solid silver;
+	}
+	#regnotdetail thead tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#regnotdetail thead th{
+		width: 200px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#regnotdetail thead td{
+		width: 400px;
+		height: 50px;
+	}
+	#regnotdetail thead .title{
+		text-align: left;
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#regnotdetail thead td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	#regnotdetail tbody th{
+		width: 100px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#regnotdetail tbody tr:FIRST-CHILD{
+		font-size: 14px;
+		width: 100%;
+		height: 150px;
+	}
+	#regnotdetail tbody tr:nth-child(2){
+		border-top:0.5px solid #dfdfdf;
+		border-bottom:0.5px solid #dfdfdf;
+		font-size: 14px;
+		width: 100%;
+	}
+	#regnotdetail tbody tr:nth-child(2) td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	
+	#regnotdetail tbody tr:nth-child(3){
+		margin: 0px auto;
+		text-align: center;
+		font-size: 14px;
+		width: 100%;
+		height:200px;
+		border-bottom: 1px solid silver;
+	}
+	#regnotdetail .textarea{
+		font-family:Noto Sans KR;
+		width:100%;
+		height:150px;
+		border:0px;
+		padding-left: 10px;
+		padding-top: 13px;
+		resize: none;
+	}
+	#regnotbtns{
+		position: relative;
+		top: -20px;
+		text-align: center;
+	}
+	#regnotbtns .btn1
+	, #regnotbtns .btn3{
+		width: 70px;
+		height: 35px;
+	    background-color: #ffffff;
+	    color: black;
+	    border: 1px solid silver;
+	}
+	#regnotbtns .btn2{
+		width: 70px;
+		height: 35px;
+	    background-color: #044879;
+	    color: white;
+	}
+	
+/*			모집 공고 등록		*/	
+	#regnot_insert{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#regnot_insert table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	#regnot_insert thead{
+		border-bottom: 1px solid silver;
+	}
+	#regnot_insert thead tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#regnot_insert thead th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#regnot_insert thead td{
+		width: 400px;
+		height: 50px;
+	}
+	#regnot_insert thead .title{
+		text-align: left;
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#regnot_insert thead td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	#regnot_insert tbody th{
+		width: 100px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#regnot_insert tbody tr:FIRST-CHILD{
+		font-size: 14px;
+		width: 100%;
+		height: 150px;
+	}
+	#regnot_insert tbody tr:nth-child(2){
+		border-top:0.5px solid #dfdfdf;
+		border-bottom:0.5px solid #dfdfdf;
+		font-size: 14px;
+		width: 100%;
+	}
+	#regnot_insert tbody tr:nth-child(2) td{
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	
+	#regnot_insert tbody tr:nth-child(3){
+		margin: 0px auto;
+		text-align: center;
+		font-size: 14px;
+		width: 100%;
+		height:200px;
+		border-bottom: 1px solid silver;
+	}
+	#regnot_insert .textarea{
+		font-family:Noto Sans KR;
+		width:100%;
+		height:150px;
+		border:0px;
+		padding-left: 10px;
+		padding-top: 13px;
+		resize: none;
+	}
+	
+/* 			학생 리스트		*/
+
+	#subup table{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#subup thead{
+		border-bottom: 2px solid #313436;
+	}
+	#subup thead th{
+		font-size: 12px;
+		padding-bottom: 15px;
+	}
+	#subup thead th:FIRST-CHILD{
+		width: 25%;
+	}
+	#subup tbody{
+	}
+	#subup tbody tr:nth-child(2n-1){
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#subup tbody td{
+		font-size: 12px;
+		border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+	}
+	#subup tbody td:FIRST-CHILD
+	, #subup tbody td:nth-child(3)
+	, #subup tbody td:nth-child(4){
+		text-align: center;
+	}
+	#subup tbody td:nth-child(1){
+		color: #044879;
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 15px;
+	}
+	#subup #page{
+		font-size: 13px;
+		text-align: center;
+		padding: 20px;
+	}
+	#subup #page .prnx{
+		font-size: 12px;
+	}
+	#subup #search{
+		text-align: center;
+		margin: 0px auto;
+		margin-bottom: 30px;
+	}
+	#subup #search .search{
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#subup #search .box{
+		width: 30%;
+		height: 27px;
+	}
+	#subup #search .searchbtn{
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#subup #search .resetbtn{
+		font-size: 13px;
+		background-color: #313436;
+		color: white;
+		border: 0px;
+		width: 50px;
+		height: 30px;
+	}
+	

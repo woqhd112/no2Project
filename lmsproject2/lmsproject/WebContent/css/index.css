@@ -1,0 +1,1137 @@
+
+   body{
+      margin: 0px;
+   }
+	.error::placeholder {
+		font-size:12px;
+		font-weight:bold;
+		color:red;
+	}
+/*             탑메뉴시작             */
+   #top {
+      z-index: 9999;
+      width: 100%;
+      position: fixed;
+      top: 0;
+   }   
+   #top ul{
+      height:30px;
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+      border-bottom: 1px solid silver;
+   }
+   #top ul>li{
+      margin: 0px auto;
+      float: left;
+      width:110px;
+      height:30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 12px;
+   }
+   #top ul>li:FIRST-CHILD{
+      color: white;
+      font-weight: bold;
+      background-color: #044879;
+   }
+   #top ul>li:nth-child(2), #top ul>li:nth-child(3), #top ul>li:nth-child(4), #top ul>li:nth-child(5){
+      color: #044879;
+      background-color: white;
+   }
+   #top ul>li:nth-child(2):hover, #top ul>li:nth-child(3):hover, 
+   #top ul>li:nth-child(4):hover, #top ul>li:nth-child(5):hover{
+      color: white;
+      background-color: #044879;
+      transition: 0.5s;
+       transition-timing-function: ease-in-out;
+   }
+   #top a{
+      display: block;
+      width: 110px;
+      height: 30px;
+   }
+   #top a:hover{
+      color: white;
+   }
+
+
+/*             탑메뉴공백시작             */
+   #blank ul{
+      width: 100%;
+      height: 30px;
+   }
+
+
+/*             헤더시작             */
+   #header img{
+      width: 100%;
+   }
+   #header {
+      border-bottom: 1px solid silver;
+   }
+
+   
+/*             메인메뉴시작             */
+   #menu{
+      text-align: center;
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+   }   
+   #menu a{
+      display: inline-block;
+      width: 150px;
+      height: 70px;
+      line-height: 70px;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+   }   
+   #menu a, #menu a:visited, #menu a:hover, #menu a:active{
+        -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+      position:relative;
+        transition:0.5s color ease;
+      text-decoration:none;
+   }
+   #menu a:hover{
+      color:#881e1e;
+   }
+   #menu a.after:after{
+      content: "";
+      transition:0.5s all ease;
+      -webkit-backface-visibility:hidden;
+      backface-visibility:hidden;
+      position:absolute;
+   }
+   #menu a.after:after{
+      bottom: -0.25em;
+   }
+   #menu a.after:after{
+      height:1px;
+      width:0;
+      background:#881e1e;
+      bottom: 10px;
+   }
+   #menu a.first:after{
+      left:0;
+   }
+   #menu a.after:hover:after{
+      width:100%;
+   }
+
+   
+/*             서브메뉴시작             */
+   #submenu{
+      display: none;
+      width: 100%;
+        position: absolute;
+      text-align: center;
+      background-color: rgba(136, 30, 30, 0.6);
+      z-index: 9999;
+   }
+   #submenu ul{
+      margin-left: 49%;
+   }
+   #submenu ul>li>a{
+      float: left;
+      width: 100px;
+      height: 40px;
+      line-height: 38px;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      text-align: center;
+   }
+   #submenu ul>li>a:hover{
+      color: #5dc0f5;
+   }
+
+
+/*             슬라이드시작             */
+   .bxslider{
+      z-index: 1;
+   }
+   .bxslider img {
+      margin: 0px auto;
+   }
+
+
+/*            취업교육과정 게시판          */
+   #main{
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+   #main #regnot{
+      width: 70%;
+      margin: 0px auto;
+   }
+   #main #regnottitle:nth-child(2n-1){ 
+	  border-radius: 10px 10px 0px 0px;
+      widht: 100%;
+      height: 90px;
+      background-color: #044879;
+      background-image: url(../imgs/submenu/regnot_title.jpg);                                                               
+      background-size: cover;
+   }
+   #main #regnottitle:nth-child(2n) { 
+	  border-radius: 10px 10px 0px 0px;
+      widht: 100%;
+      height: 90px;
+      background-color: #044879;
+       background-image: url(../imgs/submenu/regnot_title2.jpg);                                                               
+      background-size: cover;
+   }
+   #main #regnottitle a{
+      display: block;
+      line-height: 90px;
+      font-size: 25px;
+      font-weidht: bold;
+      margin: 0px auto;
+      margin-left: 20px;
+      color: white;
+   }
+   #main #regnottitle a:hover{
+      text-decoration: underline;
+      transition: 0.5s;
+      transition-timing-function: ease-in-out;
+      line-height: 90px;
+      font-size: 25px;
+      font-weidht: bold;
+      margin: 0px auto;
+      margin-left: 20px;
+      color: #a5fff7;
+   }
+   #main #regnotcontent{
+	  border-radius: 0px 0px 10px 10px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px;
+      margin: 0px auto;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      border: 1px solid silver;
+   }
+   
+/*             취업교육과정 디테일      */
+   #main #regnotdetail{
+      width: 80%;
+      margin: 0px auto;
+   }
+   #main #regnotdetail table{
+      border-top: 2px solid #313436;
+      width:100%;
+   }
+   #main #regnotdetail thead{
+      border-bottom: 1px solid silver;
+   }
+   #main #regnotdetail thead tr{
+      border-bottom:0.5px solid #dfdfdf;
+   }
+   #main #regnotdetail thead th{
+      width: 100px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   #main #regnotdetail thead td{
+      width: 400px;
+      height: 40px;
+   }
+   #main #regnotdetail thead .title{
+      color: #044879;
+      font-size: 14px;
+      font-weight: bold;
+   }
+   #main #regnotdetail thead td{
+      font-size: 13px;
+      padding-left: 10px;
+   }
+   #main #regnotdetail tbody th{
+      width: 100px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   #main #regnotdetail tbody tr:FIRST-CHILD{
+      font-size: 14px;
+      width: 100%;
+      height: 250px;
+   }
+   #main #regnotdetail tbody tr:nth-child(2){
+      border-top:0.5px solid #dfdfdf;
+      border-bottom:0.5px solid #dfdfdf;
+      font-size: 14px;
+      width: 100%;
+   }
+   #main #regnotdetail tbody tr:nth-child(2) td{
+      font-size: 13px;
+      padding-left: 10px;
+   }
+   
+   #main #regnotdetail tbody tr:nth-child(3){
+      margin: 0px auto;
+      text-align: center;
+      font-size: 14px;
+      width: 100%;
+      height:200px;
+      border-bottom: 1px solid silver;
+   }
+   #main #regnotdetail .textarea{
+      font-family:Noto Sans KR;
+      width:100%;
+      height:250px;
+      border:0px;
+      padding-left: 10px;
+      padding-top: 13px;
+      resize: none;
+   }
+   #main #regnotbtn{
+      text-align: center;
+   }
+   #main #regnotbtn .btn{
+	   border-radius: 5px 5px 5px 5px;
+       background-color: #ffffff;
+       color: black;
+       border: 1px solid silver;
+       padding: 10px 30px; 
+       margin-top: 30px;
+   }
+   
+/*            공지게시판            */
+   #main #notice{
+      width: 70%;
+      margin: 0px auto;
+   }
+   #main #notice table{
+      width: 100%;
+      margin: 0px auto;
+   }
+   #main #notice thead{
+      border-bottom: 2px solid #313436;
+   }
+   #main #notice thead th{
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 15px;
+   }
+   #main #notice tbody{
+   }
+   #main #notice tbody tr:nth-child(2n-1){
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   #main #notice tbody td{
+      font-size: 12px;
+      border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+   }
+   #main #notice tbody td:FIRST-CHILD
+   , #main #notice tbody td:nth-child(3)
+   , #main #notice tbody td:nth-child(4)
+   , #main #notice tbody td:nth-child(5){
+      text-align: center;
+   }
+   #main #notice tbody td:nth-child(2)>a{
+      display: block;
+      color: #044879;
+      margin-left: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: width 1s;
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+   #main #notice tbody td:nth-child(2)>a:hover{
+      color:#881e1e;
+      text-decoration: underline;
+      transition: 0.5s;
+      transition-timing-function: ease-in-out;
+   }
+   #main #notice #page{
+      font-size: 13px;
+      text-align: center;
+      padding: 20px;
+   }
+   #main #notice #page .prnx{
+      font-size: 12px;
+   }
+   #main #notice #search{
+      text-align: center;
+      margin: 0px auto;
+      margin-bottom: 30px;
+   }
+   #main #notice #search .search{
+      font-size: 13px;
+      width: 50px;
+      height: 30px;
+   }
+   #main #notice #search .box{
+      border-radius: 3px 3px 3px 3px;
+	  border: 1px solid silver;
+	  position: relative;
+	  top: 1px;
+	  width: 30%;
+	  height: 28px;
+   }
+   #main #notice #search .searchbtn{
+	  border-radius: 3px 3px 3px 3px;
+      border: 1px solid silver;
+      background-color: white;
+      font-size: 13px;
+      width: 50px;
+      height: 30px;
+   }
+   #main #notice #search .resetbtn{
+	  border-radius: 3px 3px 3px 3px;
+      font-size: 13px;
+      background-color: #313436;
+      color: white;
+      border: 0px;
+      width: 50px;
+      height: 30px;
+   }
+
+/*            공지게시판 디테일            */
+   #main #noticedetail{
+      width: 80%;
+      margin: 0px auto;
+   }
+   #main #noticedetail table{
+      border-top: 2px solid #313436;
+      width:100%;
+   }
+   #main #noticedetail thead{
+      border-bottom: 1px solid silver;
+   }
+   #main #noticedetail thead tr{
+      border-bottom:0.5px solid #dfdfdf;
+   }
+   #main #noticedetail thead th{
+      width: 100px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   #main #noticedetail thead .title{
+      color: #044879;
+      font-size: 14px;
+      font-weight: bold;
+   }
+   #main #noticedetail thead td{
+      width: 400px;
+      font-size: 13px;
+      padding-left: 10px;
+   }
+   #main #noticedetail tbody tr{
+      font-size: 14px;
+      width: 100%;
+      height: 300px;
+   }
+   #main #noticedetail .textarea{
+      font-family:Noto Sans KR;
+      width:100%;
+      height:300px;
+      border:0px;
+      border-bottom: 1px solid silver;
+      padding-left: 10px;
+      padding-top: 13px;
+      resize: none;
+   }
+   #main #noticebtn{
+      text-align: center;
+   }
+   #main #noticebtn .btn{
+	   border-radius: 5px 5px 5px 5px;
+       background-color: #ffffff;
+       color: black;
+       border: 1px solid silver;
+       padding: 10px 30px; 
+       margin-top: 15px;
+   }
+
+/*             FAQ               */
+   #main #faq{
+      width: 60%;
+      height: 100%;
+      margin: 0px auto;
+   }
+   #main #faq #faqtitle{ 
+	  border-radius: 10px 10px 0px 0px;
+      widht: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-decoration: underline;
+      text-align: center;
+      font-size: 20px;
+      font-weidht: bold;
+      margin: 0px auto;
+      color: white;
+      background-color: #044879;
+       background-image: url(../imgs/submenu/faq_title.jpg);                                                               
+      background-size: cover;
+   }
+   #main #faq #faqcontent{
+	  border-radius: 0px 0px 10px 10px;
+      widht: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weidht: bold;
+      margin: 0px auto;
+      color: #000620;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      border: 1px solid silver;
+   }
+
+/*             푸터시작             */
+   #footer{
+      background-color: #313436;
+      color:white;
+      text-align: center;
+   }
+   #footer ul{
+      margin: 0px auto;
+   }
+   #footer ul>li{
+      display: inline-block;
+   }
+   #loginButton{
+	  border-radius: 3px 3px 3px 3px;
+      margin-top: 10px;
+      width: 100px;
+      height: 30px;
+   }
+   .logo {
+      line-height: 80px;
+      margin-right: 30px;
+   }
+   .addr {
+      padding-top: 20px;
+      text-align: left;
+      font-size: 12px;
+   }
+   .line{
+      width:30px;
+      height:10px;
+      background-color: red;
+   }
+
+/*            로그인폼            */
+	.login{
+        margin: 0px auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 35%;
+        text-align: center;
+	}
+	.login .loginForm {
+		border-radius: 5px;
+        border: 1px solid silver;
+		height: 400px;
+	}
+    .login h2 {
+       display: inline-block;
+       margin-top: 30px;
+       margin-bottom: 30px;
+       font-size: 30px;
+       font-weight: bold;
+    }
+    .login #id {
+		border-radius: 5px;
+        border: 1px solid silver;
+        width: 70%;
+        height: 60px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    } 
+    .login #password {
+		border-radius: 5px;
+        border: 1px solid silver;
+        width: 70%;
+        height: 60px;
+        margin: 0px auto;
+        margin-bottom: 10px;   
+        padding-left: 15px;
+    }
+    .login #name {
+		border-radius: 5px;
+        border: 1px solid silver;
+        width: 70%;
+        height: 60px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    } 
+    .login #num {
+		border-radius: 5px;
+        border: 1px solid silver;
+        width: 70%;
+        height: 60px;
+        margin: 0px auto;
+        margin-bottom: 10px;   
+        padding-left: 15px;
+    }
+    .login .btns {
+        margin: 10px auto;
+    }
+    .login .btn {
+		border-radius: 5px;
+        border: 1px solid silver;
+     	width: 34%;
+      	height: 60px;
+        margin: 0px 10px;
+        background-color: #ffffff;
+        color: black;
+        display: inline-block;
+        cursor: pointer;  
+        border: 1px solid silver;
+    }
+	.login .btn2 {
+		border-radius: 5px;
+        border: none;
+        width: 34%;
+        height: 60px;
+        margin: 0px 10px;
+        color: white;
+        background-color: #313436;
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 30px;
+	}
+    .login .btn3{
+		border-radius: 5px;
+        border: 1px solid silver;
+     	width: 74%;
+      	height: 60px;
+        margin: 0px 10px;
+        background-color: #313436;
+        color: white;
+        display: inline-block;
+        cursor: pointer;  
+        border: 1px solid silver;
+    }
+    .login .btn2:hover, .login .btn3:hover{
+   	    background-color: #044879;
+		transition:3s all ease;
+	}
+	.login .search{
+		position: relative;
+		top:-20px;
+	}
+	.login .idsearch{
+		position: relative;
+		top:10px;
+	}
+	.login .search a, .login .search span{
+		font-size: 12px;
+	}
+	.login .idsearch a, .login .idsearch span{
+		font-size: 12px;
+	}
+       
+/*            회원가입폼            */
+   .join .signForm {
+       margin: 0px auto;
+       padding: 60px;
+       width: 70%;
+       height: 80%;
+   }    
+   .join .step {
+       font-size: 12px;
+       text-align: center;
+       margin: 0px auto;
+   }
+   .join .agree {
+	  border-radius: 5px;
+      text-align: center;
+      border: 1px solid darkgray;  
+      background-color: #044879;
+      color: white;
+      width: 20%;
+      height: 50px;
+      line-height: 20px;
+   }
+   .join .writeInfo {
+	  border-radius: 5px;
+      border: 1px solid silver;   
+      background-color: white;
+      color: gray;
+      width: 20%;
+      height: 50px;
+      line-height: 20px;
+   }
+   .join .bold {
+      width: 75%;
+      margin: 0px auto;
+      padding-top: 30px;
+      padding-left: 0px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 5px;
+   }
+   .joinbox{
+      text-align: center;
+   }
+   .join .textarea{
+	  border-radius: 5px;
+      overflow-x: hidden;
+      width: 75%;
+      padding: 10px;
+      font-size: 12px;
+      font-family: Noto Sans KR;
+      resize: none;
+   }
+   .join .btns{
+      margin: 0px auto;
+      text-align: center; 
+   }
+   .join .btns .btn1 {
+	  border-radius: 5px;
+      background-color: #313436;
+      color: white;
+      width: 20%;
+      height: 50px;
+      margin-top: 10px;
+   }
+   .join .btns .btn2 {
+	  border-radius: 5px;
+      background-color: #ffffff;
+      color: gray; 
+      width: 20%;
+      height: 50px;
+      margin-top: 10px;
+      margin-right: 10px;
+   }
+   .join .btns .btn3 {
+	  border-radius: 5px;
+      background-color: #313436;
+      color: white;
+      width: 20%;
+      height: 50px;
+      margin-top: 10px;
+   }
+   .join .bold2{
+      padding-top: 30px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 15px;
+   }
+   .join #lineBold{
+      width: 80%;
+      height: 1px;
+      background-color: silver;
+      margin: 0px auto;
+      margin-bottom: 30px;
+   }   
+   .join table{
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 15px;
+      text-align: center;
+   }
+   .join table tbody{
+      width:100%;
+      text-align: center;
+   }
+   .join table th{
+      display: block;
+      height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      line-height: 43px;
+      margin-right: 10px;
+   }
+   .join table td {
+      font-size: 14px;
+      margin: 0px auto;
+       font-weight: bold;
+   }
+   .join table input{
+	  border-radius: 5px;
+	  border: 1px solid silver;
+      background-color: white;
+      width: 90%;
+      height: 40px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+   }
+   .join .checkId{
+      width: 100px;
+      height: 44px;
+      margin-left: 10px;
+      margin-right: 75px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      background-color: white;
+      border: 1px solid silver;
+	  border-radius: 5px 5px 5px 5px;
+   }
+   .join .checkPw{
+      cursor: default;
+      width: 100px;
+      height: 44px;
+      margin-left: 10px;
+      margin-right: 75px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #044879;
+      background-color: white;
+      border: none;
+   }      
+   
+/*            학생 공통레이아웃            */
+   .default{
+      width: 70%;
+      height: 600px;
+      margin: 0px auto;
+      margin-top: 50px;
+      margin-bottom: 110px;
+   }
+   .default .conHeader {
+	  border-radius: 5px 5px 0px 0px;
+	  border-top: 0.5px solid silver;
+	  border-left: 0.5px solid silver;
+	  border-right: 0.5px solid silver;
+      height: 30px;
+      padding: 15px 0px;
+      font-size: 14px;
+   }
+   .default .welcome {
+      float: left;
+      color: #232323;
+      font-weight: bold;
+      line-height: 30px;
+      margin-left: 20px;
+   }
+   .default #headerBtn {
+       float: right;
+       line-height: 30px;
+       margin-right: 20px;
+   }
+   .default #headerBtn>a {
+   	  font-size: 12px;
+      padding-left: 10px;
+      color: #232323;
+   }
+   .default .box{
+   	  border-radius: 0px 0px 5px 0px;
+   	  border-right: 0.5px solid silver;
+   	  border-bottom: 0.5px solid silver;
+   	  box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+      height:600px;
+      margin: 0px auto;
+   }
+   .default .stuMenus {
+   	  border-radius: 0px 0px 0px 5px;
+      float: left;
+      width: 20%;
+      height: 600px;
+      background-color: #263238;
+   }
+   .default .stuMenus>li a:hover{
+	  background-color: #304047;
+      transition:1s all ease;
+   }
+   .default .stuMenus>li{
+      width: 100%;
+      height: 60px;
+      list-style-type: circle;
+      box-sizing: border-box;
+      border-collapse: collapse;
+      margin: 0px auto;
+   }
+   .default .stuMenus>li a{
+   	  padding-left: 25px;
+      text-align: left;
+   	  display: block;
+   	  line-height: 60px;
+   	  height: 60px;
+      font-size: 12px;
+      color: white;
+   }
+   .default .box .mainbox {
+      float: left;
+      width: 80%;
+      height: 600px;
+      margin: 0px auto;
+      text-align: center;
+   }
+   .default .box .mainbox .title:FIRST-CHILD{
+      position: relative;
+      top: -50px;
+      padding: 10px;
+      padding-left: 20px;
+      background-color: #f9f9f9;
+      text-align: left;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
+   }
+
+/*            학생대시보드(출석체크)            */
+   .mainbox .checkimg {
+      margin-top: 110px;
+   }
+   .mainbox .notice{
+      font-size: 12px;
+      margin-bottom: 10px;
+   }
+   .mainbox .margin{
+      margin-bottom: 20px;
+   }
+   .mainbox .btn2 {
+      border-radius: 5px 5px 5px 5px;
+      width: 300px;
+      height: 50px;
+      margin-bottom: 10px;
+   }
+   .mainbox .btn3 {
+      border-radius: 5px 5px 5px 5px;
+      width: 300px;
+      height: 50px;
+      color: white;
+      background-color: gray;
+   }
+
+/*            학생 정보수정       */   
+   .infor #edit1
+   , .infor #edit2
+   , .infor #edit3{
+	  border-radius: 5px 5px 5px 5px;
+	  border: 1px solid silver;
+      text-align: left;
+      width: 90%;
+      height: 30px;
+      padding-left: 15px;
+   }   
+   .edit .btn{
+       border-radius: 5px 5px 5px 5px;
+       background-color: #313436;
+       color: white;
+       padding: 10px 30px; 
+       margin-top: 30px;
+   }
+
+/*            학생(수강정보)            */
+   .infor {
+       margin: 0px auto;
+      width: 80%;
+      border-bottom: 1px solid silver;
+      border-top: 1px solid silver;
+    }
+    .infor tr{
+      border-bottom:0.5px solid #dfdfdf;
+    }
+   .infor tr th{
+      width: 150px;
+      height: 60px;
+      line-height: 60px;
+       margin: 0px auto;
+       font-size: 14px;
+       font-weight: bold;
+       background-color: rgba(192, 192, 192, 0.1);
+   }
+   .infor tr td {
+      text-align: center;
+       font-size: 14px;
+   }
+   .infor #box{
+      text-align: center;
+      width: 300px;
+      height: 30px;
+   }
+       
+/*            학생(시험조회)            */   
+   .examempty{
+      width: 80%;
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver;
+       margin: auto;
+       color: #044879;
+       font-size: 20px;
+       font-weight: bold;
+       margin-bottom: 30px;
+       padding-top: 40px;
+       padding-bottom: 40px;
+    }
+   .examdetail{
+      width: 80%;
+      margin: 0px auto;
+   }
+   .examdetail table{
+      border-top: 2px solid #313436;
+      width:100%;
+   }
+   .examdetail thead{
+      border-bottom: 1px solid silver;
+   }
+   .examdetail thead tr{
+      border-bottom:0.5px solid #dfdfdf;
+   }
+   .examdetail thead th{
+      width: 100px;
+      height: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   .examdetail thead td{
+      height: 50px;
+      font-size: 11px;
+      width: 30%;
+      padding-left: 10px;
+   }
+   .examdetail thead .title{
+      color: #044879;
+      font-size: 14px;
+      font-weight: bold;
+   }
+   .examdetail tbody th{
+      height: 50px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   .examdetail tbody tr:FIRST-CHILD{
+      font-size: 14px;
+      width: 100%;
+      height: 150px;
+   }
+   .examdetail tbody tr:nth-child(2){
+      border-top:0.5px solid #dfdfdf;
+      border-bottom:0.5px solid #dfdfdf;
+      font-size: 14px;
+      width: 100%;
+   }
+   .examdetail tbody tr:nth-child(2) th{
+      font-size: 14px;
+   }
+   .examdetail tbody tr:nth-child(2) td{
+      font-size: 13px;
+      padding-left: 10px;
+   }
+   .examdetail .textarea{
+      font-family:Noto Sans KR;
+      width:98%;
+      height:150px;
+      border:0px;
+      padding-left: 10px;
+      padding-top: 13px;
+      resize: none;
+   }
+   
+/*            학생(채용정보)            */
+
+   .mainbox #employ table{
+      width: 80%;
+      margin: 0px auto;
+   }
+   .mainbox #employ thead{
+      border-bottom: 2px solid #313436;
+   }
+   .mainbox #employ thead th{
+      font-size: 12px;
+      padding-bottom: 15px;
+   }
+   .mainbox #employ thead th:nth-child(2){
+      width:50%;
+   }
+   .mainbox #employ tbody{
+   }
+   .mainbox #employ tbody tr:nth-child(2n-1){
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   .mainbox #employ tbody td{
+      font-size: 12px;
+      border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+   }
+   .mainbox #employ tbody td:FIRST-CHILD
+   , .mainbox #employ tbody td:nth-child(3)
+   , .mainbox #employ tbody td:nth-child(4){
+      text-align: center;
+   }
+   .mainbox #employ tbody td:nth-child(2)>a{
+      text-align: left;
+      display: block;
+      color: #044879;
+      margin-left: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: width 1s;
+      padding-top: 12px;
+      padding-bottom: 12px;
+   }
+   .mainbox #employ tbody td:nth-child(2)>a:hover{
+      text-decoration: underline;
+      color:#881e1e;
+      transition: 0.5s;
+      transition-timing-function: ease-in-out;
+   }
+
+/*         채용정보 디테일         */
+   .employ_detail{
+      width: 80%;
+      margin: 0px auto;
+   }
+   .employ_detail table{
+      border-top: 2px solid #313436;
+      width:100%;
+   }
+   .employ_detail tr{
+      border-bottom:0.5px solid #dfdfdf;
+   }
+   .employ_detail th{
+      width: 130px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(192, 192, 192, 0.1);
+   }
+   .employ_detail td{
+      height: 40px;
+      font-size: 11px;
+      padding-left: 10px;
+   }
+   .employ_detail tr:FIRST-CHILD>td{
+      text-align: left;
+      padding-left: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color:  #044879;
+   }
+   .employ_detail tr:nth-child(2)>td
+   , .employ_detail tr:nth-child(3)>td{
+      text-align: left;
+      padding-left: 15px;
+   }
+    .employ_detail .btns .btn {
+		border-radius: 5px 5px 5px 5px;
+        padding: 10px 40px;
+        margin-top: 30px;
+        background-color: #ffffff;
+        color: black;
+        display: inline-block;
+        cursor: pointer;  
+        border: 1px solid silver;
+    }
+    
+
+      
+      
+      
+      

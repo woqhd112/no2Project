@@ -1,0 +1,205 @@
+
+/*		채용공고			*/
+	.addbtn{
+	    border-radius: 5px 5px 5px 5px;
+		position: relative;
+		left: 37%;
+		top: -10px;
+		border: 1px solid silver;
+		background-color: white;
+		font-size: 13px;
+		width: 50px;
+		height: 30px;
+	}
+	#employ table{
+		width: 80%;
+		margin: 0px auto;
+		margin-top: 10px;
+	}
+	#employ thead{
+		border-bottom: 2px solid #313436;
+	}
+	#employ thead th{
+		font-size: 12px;
+		padding-bottom: 15px;
+	}
+	#employ thead th:nth-child(2){
+		width:50%;
+	}
+	#employ tbody{
+	}
+	#employ tbody tr:nth-child(2n-1){
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#employ tbody td{
+		font-size: 12px;
+		border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+	}
+	#employ tbody td:FIRST-CHILD
+	, #employ tbody td:nth-child(3)
+	, #employ tbody td:nth-child(4){
+		text-align: center;
+	}
+	#employ tbody td:nth-child(2)>a{
+		text-align: left;
+		display: block;
+		color: #044879;
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: bold;
+		transition: width 1s;
+		padding: 12px;
+	}
+	#employ tbody td:nth-child(2)>a:hover{
+		color:#881e1e;
+		transition: 0.5s;
+		transition-timing-function: ease-in-out;
+	}
+	
+/*			채용정보 등록			*/	
+	#employ_insert{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#employ_insert table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	#employ_insert thead{
+		border-bottom: 1px solid silver;
+	}
+	#employ_insert thead tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#employ_insert thead th{
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#employ_insert thead td{
+		width: 400px;
+		height: 40px;
+	}
+	#employ_insert thead .title{
+		text-align: left;
+		color: #044879;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#employ_insert tbody th{
+		width: 100px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#employ_insert thead td{
+		font-size: 13px;
+	}
+	#employ_insert .link{
+		margin:0px auto;
+		position: relative;
+		top: -2px;
+	}
+	#employ_insert tbody tr{
+		font-size: 14px;
+		width: 100%;
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#employbtns .btn1{
+		width: 70px;
+		height: 35px;
+	    background-color: #044879;
+	    color: white;
+	}
+	#employbtns .btn2{
+		width: 70px;
+		height: 35px;
+	    background-color: #ffffff;
+	    color: black;
+	    border: 1px solid silver;
+	}
+	
+/*		채용정보 상세페이지		*/
+	#employ_detail{
+		width: 80%;
+		margin: 0px auto;
+	}
+	#employ_detail table{
+		border-top: 2px solid #313436;
+		width:100%;
+	}
+	#employ_detail tr{
+		border-bottom:0.5px solid #dfdfdf;
+	}
+	#employ_detail th{
+		width: 130px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(192, 192, 192, 0.1);
+	}
+	#employ_detail td{
+		height: 50px;
+		font-size: 11px;
+		padding-left: 10px;
+	}
+	#employ_detail tr:FIRST-CHILD>td{
+		text-align: left;
+		padding-left: 15px;
+		font-size: 16px;
+		font-weight: bold;
+		color:  #044879;
+	}
+	#employ_detail tr:nth-child(2)>td
+	, #employ_detail tr:nth-child(3)>td{
+		text-align: left;
+		padding-left: 15px;
+	}
+	
+/*			학생 성적조회			*/
+	#subup table{
+		position: relative;
+		top: 0px;
+		width: 80%;
+		margin: 0px auto;
+	}
+	#subup thead{
+		border-bottom: 2px solid #313436;
+	}
+	#subup thead th{
+		font-size: 12px;
+		padding-bottom: 15px;
+	}
+	#subup thead th:FIRST-CHILD{
+		width: 25%;
+	}
+	#subup tbody{
+	}
+	#subup tbody td{
+		font-size: 12px;
+		border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+	}
+	#subup tbody td:FIRST-CHILD
+	, #subup tbody td:nth-child(3)
+	, #subup tbody td:nth-child(4){
+		text-align: center;
+	}
+	#subup tbody td:nth-child(1){
+		color: #044879;
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 12px;
+	}
+	#subup #page{
+		font-size: 13px;
+		text-align: center;
+		padding: 20px;
+	}
+	#subup #page .prnx{
+		font-size: 12px;
+	}
+
+	
